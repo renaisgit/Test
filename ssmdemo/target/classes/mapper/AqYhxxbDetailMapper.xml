@@ -1,0 +1,1914 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssm.demo.mapper.AqYhxxbDetailMapper">
+  <resultMap id="BaseResultMap" type="com.ssm.demo.models.AqYhxxbDetail">
+    <id column="ID" jdbcType="VARCHAR" property="id" />
+    <result column="DLM" jdbcType="VARCHAR" property="dlm" />
+    <result column="MM" jdbcType="VARCHAR" property="mm" />
+    <result column="COMPANY_NAME" jdbcType="VARCHAR" property="companyName" />
+    <result column="COMPANY_SHORTNAME" jdbcType="VARCHAR" property="companyShortname" />
+    <result column="COMPANY_INTRODUCTION" jdbcType="VARCHAR" property="companyIntroduction" />
+    <result column="BUSINESS_LICENSE" jdbcType="VARCHAR" property="businessLicense" />
+    <result column="BUSINESS_LICENSE_PICTURE" jdbcType="VARCHAR" property="businessLicensePicture" />
+    <result column="COMPANY_CODE" jdbcType="VARCHAR" property="companyCode" />
+    <result column="COMPANY_CODE_PICTURE" jdbcType="VARCHAR" property="companyCodePicture" />
+    <result column="TAX_REGISTRATION_CODE" jdbcType="VARCHAR" property="taxRegistrationCode" />
+    <result column="TAX_REGISTRATION_CODE_PICTURE" jdbcType="VARCHAR" property="taxRegistrationCodePicture" />
+    <result column="PROVINCE" jdbcType="VARCHAR" property="province" />
+    <result column="AREA" jdbcType="VARCHAR" property="area" />
+    <result column="CITY" jdbcType="VARCHAR" property="city" />
+    <result column="TELEPHONE" jdbcType="VARCHAR" property="telephone" />
+    <result column="PHONE" jdbcType="VARCHAR" property="phone" />
+    <result column="ADDRESS" jdbcType="VARCHAR" property="address" />
+    <result column="EMAIL" jdbcType="VARCHAR" property="email" />
+    <result column="USER_TYPE" jdbcType="VARCHAR" property="userType" />
+    <result column="DEL_FLAG" jdbcType="VARCHAR" property="delFlag" />
+    <result column="CREATE_DATE" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="CREATE_BY" jdbcType="VARCHAR" property="createBy" />
+    <result column="UPDATE_DATE" jdbcType="TIMESTAMP" property="updateDate" />
+    <result column="UPDATE_BY" jdbcType="VARCHAR" property="updateBy" />
+    <result column="SHBZ" jdbcType="VARCHAR" property="shbz" />
+    <result column="DATA_COMPLETE" jdbcType="VARCHAR" property="dataComplete" />
+    <result column="CSYJ" jdbcType="VARCHAR" property="csyj" />
+    <result column="ZSYJ" jdbcType="VARCHAR" property="zsyj" />
+    <result column="LXR" jdbcType="VARCHAR" property="lxr" />
+    <result column="PROVINCE_NAME" jdbcType="VARCHAR" property="provinceName" />
+    <result column="AREA_NAME" jdbcType="VARCHAR" property="areaName" />
+    <result column="CITY_NAME" jdbcType="VARCHAR" property="cityName" />
+    <result column="CSRQ" jdbcType="VARCHAR" property="csrq" />
+    <result column="ZSRQ" jdbcType="VARCHAR" property="zsrq" />
+    <result column="CSYH" jdbcType="VARCHAR" property="csyh" />
+    <result column="ZSYH" jdbcType="VARCHAR" property="zsyh" />
+    <result column="ORGANIZATION_CODE" jdbcType="VARCHAR" property="organizationCode" />
+    <result column="ENTERPRISECHARACTER" jdbcType="VARCHAR" property="enterprisecharacter" />
+    <result column="BUSINESSSCOPE" jdbcType="VARCHAR" property="businessscope" />
+    <result column="REGISTEREDCAPITAL" jdbcType="VARCHAR" property="registeredcapital" />
+    <result column="LEGALREPRESENTATIVE" jdbcType="VARCHAR" property="legalrepresentative" />
+    <result column="ESTABLISHMENTS" jdbcType="VARCHAR" property="establishments" />
+    <result column="POSTALCODE" jdbcType="VARCHAR" property="postalcode" />
+    <result column="RESOURCELOCATOR" jdbcType="VARCHAR" property="resourcelocator" />
+    <result column="ENTERPRISESCOORDINATE" jdbcType="VARCHAR" property="enterprisescoordinate" />
+    <result column="PRODUCTNAME" jdbcType="VARCHAR" property="productname" />
+    <result column="BRAND" jdbcType="VARCHAR" property="brand" />
+    <result column="EMPLOYEESTOTAL" jdbcType="VARCHAR" property="employeestotal" />
+    <result column="PRODUCTIONEMPLOYEES" jdbcType="VARCHAR" property="productionemployees" />
+    <result column="WORKSEMPLOYEES" jdbcType="VARCHAR" property="worksemployees" />
+    <result column="MANAGEEMPLOYEES" jdbcType="VARCHAR" property="manageemployees" />
+    <result column="DEVELOPEMPLOYEES" jdbcType="VARCHAR" property="developemployees" />
+    <result column="QUALITYEMPLOYEES" jdbcType="VARCHAR" property="qualityemployees" />
+    <result column="AGENCY" jdbcType="VARCHAR" property="agency" />
+    <result column="NORMALDELIVERYDAY" jdbcType="VARCHAR" property="normaldeliveryday" />
+    <result column="BULKSHIPMENTSDAY" jdbcType="VARCHAR" property="bulkshipmentsday" />
+    <result column="ISONINE" jdbcType="VARCHAR" property="isonine" />
+    <result column="ISONINEID" jdbcType="VARCHAR" property="isonineid" />
+    <result column="ISOFOUR" jdbcType="VARCHAR" property="isofour" />
+    <result column="ISOFOURID" jdbcType="VARCHAR" property="isofourid" />
+    <result column="QSNINE" jdbcType="VARCHAR" property="qsnine" />
+    <result column="QSNINEID" jdbcType="VARCHAR" property="qsnineid" />
+    <result column="CERTIFICATION" jdbcType="VARCHAR" property="certification" />
+    <result column="CERTIFICATIONID" jdbcType="VARCHAR" property="certificationid" />
+    <result column="DOMESTICNAME" jdbcType="VARCHAR" property="domesticname" />
+    <result column="DOMESTICBRAND" jdbcType="VARCHAR" property="domesticbrand" />
+    <result column="ENTERPORTNAME" jdbcType="VARCHAR" property="enterportname" />
+    <result column="ENTERPORTBRAND" jdbcType="VARCHAR" property="enterportbrand" />
+    <result column="AGENCYEMPLOYEESTOTAL" jdbcType="VARCHAR" property="agencyemployeestotal" />
+    <result column="AGENCYEMPLOYEESSALES" jdbcType="VARCHAR" property="agencyemployeessales" />
+    <result column="ONLYAGENCY" jdbcType="VARCHAR" property="onlyagency" />
+    <result column="TERRITORY" jdbcType="VARCHAR" property="territory" />
+    <result column="WAREHOUSE" jdbcType="VARCHAR" property="warehouse" />
+    <result column="INVENTORY" jdbcType="VARCHAR" property="inventory" />
+    <result column="DELIVERYMODE" jdbcType="VARCHAR" property="deliverymode" />
+    <result column="DISTRIBUTIONRANGE" jdbcType="VARCHAR" property="distributionrange" />
+    <result column="ENTERPRISEQUALIFICATION" jdbcType="VARCHAR" property="enterprisequalification" />
+    <result column="REPAIREMPLOYEESTOTAL" jdbcType="VARCHAR" property="repairemployeestotal" />
+    <result column="TECHNICIANSEMPLOYEES" jdbcType="VARCHAR" property="techniciansemployees" />
+    <result column="WORKINGNUM" jdbcType="VARCHAR" property="workingnum" />
+    <result column="MAJORMODELS" jdbcType="VARCHAR" property="majormodels" />
+    <result column="YEARREPAIR" jdbcType="VARCHAR" property="yearrepair" />
+    <result column="DIRECTCOMPENSATION" jdbcType="VARCHAR" property="directcompensation" />
+    <result column="COOPERATORSINSURANCE" jdbcType="VARCHAR" property="cooperatorsinsurance" />
+    <result column="SPECIALMAINTENANCE" jdbcType="VARCHAR" property="specialmaintenance" />
+    <result column="SPECIALBRAND" jdbcType="VARCHAR" property="specialbrand" />
+    <result column="ISFIRSTIMPORTAGENT" jdbcType="VARCHAR" property="isfirstimportagent" />
+    <result column="ALLIANCE" jdbcType="VARCHAR" property="alliance" />
+    <result column="ALLIANCEID" jdbcType="VARCHAR" property="allianceid" />
+    <result column="COMPANYPHOTO" jdbcType="VARCHAR" property="companyphoto" />
+    <result column="QQ" jdbcType="VARCHAR" property="qq" />
+    <result column="WECHAT" jdbcType="VARCHAR" property="wechat" />
+    <result column="FAX" jdbcType="VARCHAR" property="fax" />
+    <result column="ACCESSORIES" jdbcType="VARCHAR" property="accessories" />
+    <result column="ATTESTATIONPICTURE" jdbcType="VARCHAR" property="attestationpicture" />
+    <result column="MAINBRAND" jdbcType="VARCHAR" property="mainbrand" />
+    <result column="ISQUICKLYCENTER" jdbcType="VARCHAR" property="isquicklycenter" />
+    <result column="DELIVERREGION" jdbcType="VARCHAR" property="deliverregion" />
+    <result column="ISCOLLECTMONEY" jdbcType="VARCHAR" property="iscollectmoney" />
+    <result column="CANPICKUP" jdbcType="VARCHAR" property="canpickup" />
+    <result column="PRICESTANDARDS" jdbcType="VARCHAR" property="pricestandards" />
+    <result column="CJBJ" jdbcType="VARCHAR" property="cjbj" />
+    <result column="MICRO_SIGNAL" jdbcType="VARCHAR" property="microSignal" />
+    <result column="SUPER_SELLER" jdbcType="VARCHAR" property="superSeller" />
+    <result column="IS_QD" jdbcType="VARCHAR" property="isQd" />
+    <result column="COMPANY_ID" jdbcType="VARCHAR" property="companyId" />
+    <result column="QD_TIME" jdbcType="TIMESTAMP" property="qdTime" />
+    <result column="VALIDATE_CODE" jdbcType="VARCHAR" property="validateCode" />
+    <result column="COMPANYPHOTOA" jdbcType="VARCHAR" property="companyphotoa" />
+    <result column="COMPANYPHOTOB" jdbcType="VARCHAR" property="companyphotob" />
+    <result column="COMPANYPHOTOC" jdbcType="VARCHAR" property="companyphotoc" />
+    <result column="CREDIT_LEVEL" jdbcType="INTEGER" property="creditLevel" />
+    <result column="INTEGRAL_LEVEL" jdbcType="INTEGER" property="integralLevel" />
+    <result column="PID" jdbcType="VARCHAR" property="pid" />
+    <result column="ISMNG" jdbcType="VARCHAR" property="ismng" />
+    <result column="IS_HZ_KZ_STATUS" jdbcType="VARCHAR" property="isHzKzStatus" />
+    <result column="IS_HZ_KZ_SF_TYPE" jdbcType="VARCHAR" property="isHzKzSfType" />
+    <result column="PARTS_VALIDATE_REMARK" jdbcType="VARCHAR" property="partsValidateRemark" />
+    <result column="SOURCE_FLAG" jdbcType="VARCHAR" property="sourceFlag" />
+    <result column="RETURN_CODE" jdbcType="VARCHAR" property="returnCode" />
+    <result column="MERCHANT_CODE" jdbcType="VARCHAR" property="merchantCode" />
+    <result column="BANK_TYPE" jdbcType="VARCHAR" property="bankType" />
+    <result column="CREDIT_NO" jdbcType="VARCHAR" property="creditNo" />
+    <result column="IS_ACCESS_FLAG" jdbcType="VARCHAR" property="isAccessFlag" />
+    <result column="AUTO_SELECT_PJS_FLAG" jdbcType="VARCHAR" property="autoSelectPjsFlag" />
+    <result column="THREAD_NUM" jdbcType="INTEGER" property="threadNum" />
+    <result column="message_code" jdbcType="VARCHAR" property="messageCode" />
+    <result column="EXPIRED_TIME" jdbcType="TIMESTAMP" property="expiredTime" />
+    <result column="IS_COOPERATE_FLAG" jdbcType="VARCHAR" property="isCooperateFlag" />
+    <result column="XJ_TX_FLAG" jdbcType="VARCHAR" property="xjTxFlag" />
+    <result column="XD_TX_FLAG" jdbcType="VARCHAR" property="xdTxFlag" />
+    <result column="ZF_TX_FLAG" jdbcType="VARCHAR" property="zfTxFlag" />
+    <result column="SH_TX_FLAG" jdbcType="VARCHAR" property="shTxFlag" />
+    <result column="INITIAL_TELEPHONE" jdbcType="VARCHAR" property="initialTelephone" />
+    <result column="FP_COMPANY_NAME" jdbcType="VARCHAR" property="fpCompanyName" />
+    <result column="FP_ID_CODE" jdbcType="VARCHAR" property="fpIdCode" />
+    <result column="FP_ADDRESS" jdbcType="VARCHAR" property="fpAddress" />
+    <result column="FP_PHONE" jdbcType="VARCHAR" property="fpPhone" />
+    <result column="FP_BANK_TYPE" jdbcType="VARCHAR" property="fpBankType" />
+    <result column="FP_BANK_CODE" jdbcType="VARCHAR" property="fpBankCode" />
+    <result column="AQ_FP_TYPE" jdbcType="VARCHAR" property="aqFpType" />
+    <result column="FP_COMMON_COMPANY_NAME" jdbcType="VARCHAR" property="fpCommonCompanyName" />
+    <result column="ZY_BANK_TYPE" jdbcType="VARCHAR" property="zyBankType" />
+    <result column="ZY_CREDIT_NO" jdbcType="VARCHAR" property="zyCreditNo" />
+    <result column="ZY_MERCHANT_CODE" jdbcType="VARCHAR" property="zyMerchantCode" />
+    <result column="AREA_QUOTE_MANAGER" jdbcType="VARCHAR" property="areaQuoteManager" />
+    <result column="HJ_AUTO_SELECT_PJS_FLAG" jdbcType="VARCHAR" property="hjAutoSelectPjsFlag" />
+    <result column="PJS_SELECT_RANGE" jdbcType="VARCHAR" property="pjsSelectRange" />
+    <result column="info_public_flag" jdbcType="VARCHAR" property="infoPublicFlag" />
+    <result column="shop_name" jdbcType="VARCHAR" property="shopName" />
+    <result column="DO_COOPERATE_FLAG" jdbcType="VARCHAR" property="doCooperateFlag" />
+    <result column="IS_MALLUSER" jdbcType="VARCHAR" property="isMalluser" />
+    <result column="lEGALPERSON_NAME" jdbcType="VARCHAR" property="legalpersonName" />
+    <result column="lEGALPERSON_PICTRRE" jdbcType="VARCHAR" property="legalpersonPictrre" />
+    <result column="lEGALPERSON_CARDED" jdbcType="VARCHAR" property="legalpersonCarded" />
+    <result column="lEGALPERSON_PHONE" jdbcType="VARCHAR" property="legalpersonPhone" />
+    <result column="YH_ORIGIN" jdbcType="VARCHAR" property="yhOrigin" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    ID, DLM, MM, COMPANY_NAME, COMPANY_SHORTNAME, COMPANY_INTRODUCTION, BUSINESS_LICENSE, 
+    BUSINESS_LICENSE_PICTURE, COMPANY_CODE, COMPANY_CODE_PICTURE, TAX_REGISTRATION_CODE, 
+    TAX_REGISTRATION_CODE_PICTURE, PROVINCE, AREA, CITY, TELEPHONE, PHONE, ADDRESS, EMAIL, 
+    USER_TYPE, DEL_FLAG, CREATE_DATE, CREATE_BY, UPDATE_DATE, UPDATE_BY, SHBZ, DATA_COMPLETE, 
+    CSYJ, ZSYJ, LXR, PROVINCE_NAME, AREA_NAME, CITY_NAME, CSRQ, ZSRQ, CSYH, ZSYH, ORGANIZATION_CODE, 
+    ENTERPRISECHARACTER, BUSINESSSCOPE, REGISTEREDCAPITAL, LEGALREPRESENTATIVE, ESTABLISHMENTS, 
+    POSTALCODE, RESOURCELOCATOR, ENTERPRISESCOORDINATE, PRODUCTNAME, BRAND, EMPLOYEESTOTAL, 
+    PRODUCTIONEMPLOYEES, WORKSEMPLOYEES, MANAGEEMPLOYEES, DEVELOPEMPLOYEES, QUALITYEMPLOYEES, 
+    AGENCY, NORMALDELIVERYDAY, BULKSHIPMENTSDAY, ISONINE, ISONINEID, ISOFOUR, ISOFOURID, 
+    QSNINE, QSNINEID, CERTIFICATION, CERTIFICATIONID, DOMESTICNAME, DOMESTICBRAND, ENTERPORTNAME, 
+    ENTERPORTBRAND, AGENCYEMPLOYEESTOTAL, AGENCYEMPLOYEESSALES, ONLYAGENCY, TERRITORY, 
+    WAREHOUSE, INVENTORY, DELIVERYMODE, DISTRIBUTIONRANGE, ENTERPRISEQUALIFICATION, REPAIREMPLOYEESTOTAL, 
+    TECHNICIANSEMPLOYEES, WORKINGNUM, MAJORMODELS, YEARREPAIR, DIRECTCOMPENSATION, COOPERATORSINSURANCE, 
+    SPECIALMAINTENANCE, SPECIALBRAND, ISFIRSTIMPORTAGENT, ALLIANCE, ALLIANCEID, COMPANYPHOTO, 
+    QQ, WECHAT, FAX, ACCESSORIES, ATTESTATIONPICTURE, MAINBRAND, ISQUICKLYCENTER, DELIVERREGION, 
+    ISCOLLECTMONEY, CANPICKUP, PRICESTANDARDS, CJBJ, MICRO_SIGNAL, SUPER_SELLER, IS_QD, 
+    COMPANY_ID, QD_TIME, VALIDATE_CODE, COMPANYPHOTOA, COMPANYPHOTOB, COMPANYPHOTOC, 
+    CREDIT_LEVEL, INTEGRAL_LEVEL, PID, ISMNG, IS_HZ_KZ_STATUS, IS_HZ_KZ_SF_TYPE, PARTS_VALIDATE_REMARK, 
+    SOURCE_FLAG, RETURN_CODE, MERCHANT_CODE, BANK_TYPE, CREDIT_NO, IS_ACCESS_FLAG, AUTO_SELECT_PJS_FLAG, 
+    THREAD_NUM, message_code, EXPIRED_TIME, IS_COOPERATE_FLAG, XJ_TX_FLAG, XD_TX_FLAG, 
+    ZF_TX_FLAG, SH_TX_FLAG, INITIAL_TELEPHONE, FP_COMPANY_NAME, FP_ID_CODE, FP_ADDRESS, 
+    FP_PHONE, FP_BANK_TYPE, FP_BANK_CODE, AQ_FP_TYPE, FP_COMMON_COMPANY_NAME, ZY_BANK_TYPE, 
+    ZY_CREDIT_NO, ZY_MERCHANT_CODE, AREA_QUOTE_MANAGER, HJ_AUTO_SELECT_PJS_FLAG, PJS_SELECT_RANGE, 
+    info_public_flag, shop_name, DO_COOPERATE_FLAG, IS_MALLUSER, lEGALPERSON_NAME, lEGALPERSON_PICTRRE, 
+    lEGALPERSON_CARDED, lEGALPERSON_PHONE, YH_ORIGIN
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from aq_yhxxb_detail
+    where ID = #{id,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from aq_yhxxb_detail
+    where ID = #{id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.ssm.demo.models.AqYhxxbDetail">
+    insert into aq_yhxxb_detail (ID, DLM, MM, 
+      COMPANY_NAME, COMPANY_SHORTNAME, COMPANY_INTRODUCTION, 
+      BUSINESS_LICENSE, BUSINESS_LICENSE_PICTURE, 
+      COMPANY_CODE, COMPANY_CODE_PICTURE, TAX_REGISTRATION_CODE, 
+      TAX_REGISTRATION_CODE_PICTURE, PROVINCE, AREA, 
+      CITY, TELEPHONE, PHONE, 
+      ADDRESS, EMAIL, USER_TYPE, 
+      DEL_FLAG, CREATE_DATE, CREATE_BY, 
+      UPDATE_DATE, UPDATE_BY, SHBZ, 
+      DATA_COMPLETE, CSYJ, ZSYJ, 
+      LXR, PROVINCE_NAME, AREA_NAME, 
+      CITY_NAME, CSRQ, ZSRQ, 
+      CSYH, ZSYH, ORGANIZATION_CODE, 
+      ENTERPRISECHARACTER, BUSINESSSCOPE, REGISTEREDCAPITAL, 
+      LEGALREPRESENTATIVE, ESTABLISHMENTS, POSTALCODE, 
+      RESOURCELOCATOR, ENTERPRISESCOORDINATE, 
+      PRODUCTNAME, BRAND, EMPLOYEESTOTAL, 
+      PRODUCTIONEMPLOYEES, WORKSEMPLOYEES, MANAGEEMPLOYEES, 
+      DEVELOPEMPLOYEES, QUALITYEMPLOYEES, AGENCY, 
+      NORMALDELIVERYDAY, BULKSHIPMENTSDAY, ISONINE, 
+      ISONINEID, ISOFOUR, ISOFOURID, 
+      QSNINE, QSNINEID, CERTIFICATION, 
+      CERTIFICATIONID, DOMESTICNAME, DOMESTICBRAND, 
+      ENTERPORTNAME, ENTERPORTBRAND, AGENCYEMPLOYEESTOTAL, 
+      AGENCYEMPLOYEESSALES, ONLYAGENCY, TERRITORY, 
+      WAREHOUSE, INVENTORY, DELIVERYMODE, 
+      DISTRIBUTIONRANGE, ENTERPRISEQUALIFICATION, 
+      REPAIREMPLOYEESTOTAL, TECHNICIANSEMPLOYEES, 
+      WORKINGNUM, MAJORMODELS, YEARREPAIR, 
+      DIRECTCOMPENSATION, COOPERATORSINSURANCE, 
+      SPECIALMAINTENANCE, SPECIALBRAND, ISFIRSTIMPORTAGENT, 
+      ALLIANCE, ALLIANCEID, COMPANYPHOTO, 
+      QQ, WECHAT, FAX, ACCESSORIES, 
+      ATTESTATIONPICTURE, MAINBRAND, ISQUICKLYCENTER, 
+      DELIVERREGION, ISCOLLECTMONEY, CANPICKUP, 
+      PRICESTANDARDS, CJBJ, MICRO_SIGNAL, 
+      SUPER_SELLER, IS_QD, COMPANY_ID, 
+      QD_TIME, VALIDATE_CODE, COMPANYPHOTOA, 
+      COMPANYPHOTOB, COMPANYPHOTOC, CREDIT_LEVEL, 
+      INTEGRAL_LEVEL, PID, ISMNG, 
+      IS_HZ_KZ_STATUS, IS_HZ_KZ_SF_TYPE, PARTS_VALIDATE_REMARK, 
+      SOURCE_FLAG, RETURN_CODE, MERCHANT_CODE, 
+      BANK_TYPE, CREDIT_NO, IS_ACCESS_FLAG, 
+      AUTO_SELECT_PJS_FLAG, THREAD_NUM, message_code, 
+      EXPIRED_TIME, IS_COOPERATE_FLAG, XJ_TX_FLAG, 
+      XD_TX_FLAG, ZF_TX_FLAG, SH_TX_FLAG, 
+      INITIAL_TELEPHONE, FP_COMPANY_NAME, FP_ID_CODE, 
+      FP_ADDRESS, FP_PHONE, FP_BANK_TYPE, 
+      FP_BANK_CODE, AQ_FP_TYPE, FP_COMMON_COMPANY_NAME, 
+      ZY_BANK_TYPE, ZY_CREDIT_NO, ZY_MERCHANT_CODE, 
+      AREA_QUOTE_MANAGER, HJ_AUTO_SELECT_PJS_FLAG, 
+      PJS_SELECT_RANGE, info_public_flag, shop_name, 
+      DO_COOPERATE_FLAG, IS_MALLUSER, lEGALPERSON_NAME, 
+      lEGALPERSON_PICTRRE, lEGALPERSON_CARDED, 
+      lEGALPERSON_PHONE, YH_ORIGIN)
+    values (#{id,jdbcType=VARCHAR}, #{dlm,jdbcType=VARCHAR}, #{mm,jdbcType=VARCHAR}, 
+      #{companyName,jdbcType=VARCHAR}, #{companyShortname,jdbcType=VARCHAR}, #{companyIntroduction,jdbcType=VARCHAR}, 
+      #{businessLicense,jdbcType=VARCHAR}, #{businessLicensePicture,jdbcType=VARCHAR}, 
+      #{companyCode,jdbcType=VARCHAR}, #{companyCodePicture,jdbcType=VARCHAR}, #{taxRegistrationCode,jdbcType=VARCHAR}, 
+      #{taxRegistrationCodePicture,jdbcType=VARCHAR}, #{province,jdbcType=VARCHAR}, #{area,jdbcType=VARCHAR}, 
+      #{city,jdbcType=VARCHAR}, #{telephone,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, 
+      #{address,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{userType,jdbcType=VARCHAR}, 
+      #{delFlag,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP}, #{createBy,jdbcType=VARCHAR}, 
+      #{updateDate,jdbcType=TIMESTAMP}, #{updateBy,jdbcType=VARCHAR}, #{shbz,jdbcType=VARCHAR}, 
+      #{dataComplete,jdbcType=VARCHAR}, #{csyj,jdbcType=VARCHAR}, #{zsyj,jdbcType=VARCHAR}, 
+      #{lxr,jdbcType=VARCHAR}, #{provinceName,jdbcType=VARCHAR}, #{areaName,jdbcType=VARCHAR}, 
+      #{cityName,jdbcType=VARCHAR}, #{csrq,jdbcType=VARCHAR}, #{zsrq,jdbcType=VARCHAR}, 
+      #{csyh,jdbcType=VARCHAR}, #{zsyh,jdbcType=VARCHAR}, #{organizationCode,jdbcType=VARCHAR}, 
+      #{enterprisecharacter,jdbcType=VARCHAR}, #{businessscope,jdbcType=VARCHAR}, #{registeredcapital,jdbcType=VARCHAR}, 
+      #{legalrepresentative,jdbcType=VARCHAR}, #{establishments,jdbcType=VARCHAR}, #{postalcode,jdbcType=VARCHAR}, 
+      #{resourcelocator,jdbcType=VARCHAR}, #{enterprisescoordinate,jdbcType=VARCHAR}, 
+      #{productname,jdbcType=VARCHAR}, #{brand,jdbcType=VARCHAR}, #{employeestotal,jdbcType=VARCHAR}, 
+      #{productionemployees,jdbcType=VARCHAR}, #{worksemployees,jdbcType=VARCHAR}, #{manageemployees,jdbcType=VARCHAR}, 
+      #{developemployees,jdbcType=VARCHAR}, #{qualityemployees,jdbcType=VARCHAR}, #{agency,jdbcType=VARCHAR}, 
+      #{normaldeliveryday,jdbcType=VARCHAR}, #{bulkshipmentsday,jdbcType=VARCHAR}, #{isonine,jdbcType=VARCHAR}, 
+      #{isonineid,jdbcType=VARCHAR}, #{isofour,jdbcType=VARCHAR}, #{isofourid,jdbcType=VARCHAR}, 
+      #{qsnine,jdbcType=VARCHAR}, #{qsnineid,jdbcType=VARCHAR}, #{certification,jdbcType=VARCHAR}, 
+      #{certificationid,jdbcType=VARCHAR}, #{domesticname,jdbcType=VARCHAR}, #{domesticbrand,jdbcType=VARCHAR}, 
+      #{enterportname,jdbcType=VARCHAR}, #{enterportbrand,jdbcType=VARCHAR}, #{agencyemployeestotal,jdbcType=VARCHAR}, 
+      #{agencyemployeessales,jdbcType=VARCHAR}, #{onlyagency,jdbcType=VARCHAR}, #{territory,jdbcType=VARCHAR}, 
+      #{warehouse,jdbcType=VARCHAR}, #{inventory,jdbcType=VARCHAR}, #{deliverymode,jdbcType=VARCHAR}, 
+      #{distributionrange,jdbcType=VARCHAR}, #{enterprisequalification,jdbcType=VARCHAR}, 
+      #{repairemployeestotal,jdbcType=VARCHAR}, #{techniciansemployees,jdbcType=VARCHAR}, 
+      #{workingnum,jdbcType=VARCHAR}, #{majormodels,jdbcType=VARCHAR}, #{yearrepair,jdbcType=VARCHAR}, 
+      #{directcompensation,jdbcType=VARCHAR}, #{cooperatorsinsurance,jdbcType=VARCHAR}, 
+      #{specialmaintenance,jdbcType=VARCHAR}, #{specialbrand,jdbcType=VARCHAR}, #{isfirstimportagent,jdbcType=VARCHAR}, 
+      #{alliance,jdbcType=VARCHAR}, #{allianceid,jdbcType=VARCHAR}, #{companyphoto,jdbcType=VARCHAR}, 
+      #{qq,jdbcType=VARCHAR}, #{wechat,jdbcType=VARCHAR}, #{fax,jdbcType=VARCHAR}, #{accessories,jdbcType=VARCHAR}, 
+      #{attestationpicture,jdbcType=VARCHAR}, #{mainbrand,jdbcType=VARCHAR}, #{isquicklycenter,jdbcType=VARCHAR}, 
+      #{deliverregion,jdbcType=VARCHAR}, #{iscollectmoney,jdbcType=VARCHAR}, #{canpickup,jdbcType=VARCHAR}, 
+      #{pricestandards,jdbcType=VARCHAR}, #{cjbj,jdbcType=VARCHAR}, #{microSignal,jdbcType=VARCHAR}, 
+      #{superSeller,jdbcType=VARCHAR}, #{isQd,jdbcType=VARCHAR}, #{companyId,jdbcType=VARCHAR}, 
+      #{qdTime,jdbcType=TIMESTAMP}, #{validateCode,jdbcType=VARCHAR}, #{companyphotoa,jdbcType=VARCHAR}, 
+      #{companyphotob,jdbcType=VARCHAR}, #{companyphotoc,jdbcType=VARCHAR}, #{creditLevel,jdbcType=INTEGER}, 
+      #{integralLevel,jdbcType=INTEGER}, #{pid,jdbcType=VARCHAR}, #{ismng,jdbcType=VARCHAR}, 
+      #{isHzKzStatus,jdbcType=VARCHAR}, #{isHzKzSfType,jdbcType=VARCHAR}, #{partsValidateRemark,jdbcType=VARCHAR}, 
+      #{sourceFlag,jdbcType=VARCHAR}, #{returnCode,jdbcType=VARCHAR}, #{merchantCode,jdbcType=VARCHAR}, 
+      #{bankType,jdbcType=VARCHAR}, #{creditNo,jdbcType=VARCHAR}, #{isAccessFlag,jdbcType=VARCHAR}, 
+      #{autoSelectPjsFlag,jdbcType=VARCHAR}, #{threadNum,jdbcType=INTEGER}, #{messageCode,jdbcType=VARCHAR}, 
+      #{expiredTime,jdbcType=TIMESTAMP}, #{isCooperateFlag,jdbcType=VARCHAR}, #{xjTxFlag,jdbcType=VARCHAR}, 
+      #{xdTxFlag,jdbcType=VARCHAR}, #{zfTxFlag,jdbcType=VARCHAR}, #{shTxFlag,jdbcType=VARCHAR}, 
+      #{initialTelephone,jdbcType=VARCHAR}, #{fpCompanyName,jdbcType=VARCHAR}, #{fpIdCode,jdbcType=VARCHAR}, 
+      #{fpAddress,jdbcType=VARCHAR}, #{fpPhone,jdbcType=VARCHAR}, #{fpBankType,jdbcType=VARCHAR}, 
+      #{fpBankCode,jdbcType=VARCHAR}, #{aqFpType,jdbcType=VARCHAR}, #{fpCommonCompanyName,jdbcType=VARCHAR}, 
+      #{zyBankType,jdbcType=VARCHAR}, #{zyCreditNo,jdbcType=VARCHAR}, #{zyMerchantCode,jdbcType=VARCHAR}, 
+      #{areaQuoteManager,jdbcType=VARCHAR}, #{hjAutoSelectPjsFlag,jdbcType=VARCHAR}, 
+      #{pjsSelectRange,jdbcType=VARCHAR}, #{infoPublicFlag,jdbcType=VARCHAR}, #{shopName,jdbcType=VARCHAR}, 
+      #{doCooperateFlag,jdbcType=VARCHAR}, #{isMalluser,jdbcType=VARCHAR}, #{legalpersonName,jdbcType=VARCHAR}, 
+      #{legalpersonPictrre,jdbcType=VARCHAR}, #{legalpersonCarded,jdbcType=VARCHAR}, 
+      #{legalpersonPhone,jdbcType=VARCHAR}, #{yhOrigin,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.ssm.demo.models.AqYhxxbDetail">
+    insert into aq_yhxxb_detail
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        ID,
+      </if>
+      <if test="dlm != null">
+        DLM,
+      </if>
+      <if test="mm != null">
+        MM,
+      </if>
+      <if test="companyName != null">
+        COMPANY_NAME,
+      </if>
+      <if test="companyShortname != null">
+        COMPANY_SHORTNAME,
+      </if>
+      <if test="companyIntroduction != null">
+        COMPANY_INTRODUCTION,
+      </if>
+      <if test="businessLicense != null">
+        BUSINESS_LICENSE,
+      </if>
+      <if test="businessLicensePicture != null">
+        BUSINESS_LICENSE_PICTURE,
+      </if>
+      <if test="companyCode != null">
+        COMPANY_CODE,
+      </if>
+      <if test="companyCodePicture != null">
+        COMPANY_CODE_PICTURE,
+      </if>
+      <if test="taxRegistrationCode != null">
+        TAX_REGISTRATION_CODE,
+      </if>
+      <if test="taxRegistrationCodePicture != null">
+        TAX_REGISTRATION_CODE_PICTURE,
+      </if>
+      <if test="province != null">
+        PROVINCE,
+      </if>
+      <if test="area != null">
+        AREA,
+      </if>
+      <if test="city != null">
+        CITY,
+      </if>
+      <if test="telephone != null">
+        TELEPHONE,
+      </if>
+      <if test="phone != null">
+        PHONE,
+      </if>
+      <if test="address != null">
+        ADDRESS,
+      </if>
+      <if test="email != null">
+        EMAIL,
+      </if>
+      <if test="userType != null">
+        USER_TYPE,
+      </if>
+      <if test="delFlag != null">
+        DEL_FLAG,
+      </if>
+      <if test="createDate != null">
+        CREATE_DATE,
+      </if>
+      <if test="createBy != null">
+        CREATE_BY,
+      </if>
+      <if test="updateDate != null">
+        UPDATE_DATE,
+      </if>
+      <if test="updateBy != null">
+        UPDATE_BY,
+      </if>
+      <if test="shbz != null">
+        SHBZ,
+      </if>
+      <if test="dataComplete != null">
+        DATA_COMPLETE,
+      </if>
+      <if test="csyj != null">
+        CSYJ,
+      </if>
+      <if test="zsyj != null">
+        ZSYJ,
+      </if>
+      <if test="lxr != null">
+        LXR,
+      </if>
+      <if test="provinceName != null">
+        PROVINCE_NAME,
+      </if>
+      <if test="areaName != null">
+        AREA_NAME,
+      </if>
+      <if test="cityName != null">
+        CITY_NAME,
+      </if>
+      <if test="csrq != null">
+        CSRQ,
+      </if>
+      <if test="zsrq != null">
+        ZSRQ,
+      </if>
+      <if test="csyh != null">
+        CSYH,
+      </if>
+      <if test="zsyh != null">
+        ZSYH,
+      </if>
+      <if test="organizationCode != null">
+        ORGANIZATION_CODE,
+      </if>
+      <if test="enterprisecharacter != null">
+        ENTERPRISECHARACTER,
+      </if>
+      <if test="businessscope != null">
+        BUSINESSSCOPE,
+      </if>
+      <if test="registeredcapital != null">
+        REGISTEREDCAPITAL,
+      </if>
+      <if test="legalrepresentative != null">
+        LEGALREPRESENTATIVE,
+      </if>
+      <if test="establishments != null">
+        ESTABLISHMENTS,
+      </if>
+      <if test="postalcode != null">
+        POSTALCODE,
+      </if>
+      <if test="resourcelocator != null">
+        RESOURCELOCATOR,
+      </if>
+      <if test="enterprisescoordinate != null">
+        ENTERPRISESCOORDINATE,
+      </if>
+      <if test="productname != null">
+        PRODUCTNAME,
+      </if>
+      <if test="brand != null">
+        BRAND,
+      </if>
+      <if test="employeestotal != null">
+        EMPLOYEESTOTAL,
+      </if>
+      <if test="productionemployees != null">
+        PRODUCTIONEMPLOYEES,
+      </if>
+      <if test="worksemployees != null">
+        WORKSEMPLOYEES,
+      </if>
+      <if test="manageemployees != null">
+        MANAGEEMPLOYEES,
+      </if>
+      <if test="developemployees != null">
+        DEVELOPEMPLOYEES,
+      </if>
+      <if test="qualityemployees != null">
+        QUALITYEMPLOYEES,
+      </if>
+      <if test="agency != null">
+        AGENCY,
+      </if>
+      <if test="normaldeliveryday != null">
+        NORMALDELIVERYDAY,
+      </if>
+      <if test="bulkshipmentsday != null">
+        BULKSHIPMENTSDAY,
+      </if>
+      <if test="isonine != null">
+        ISONINE,
+      </if>
+      <if test="isonineid != null">
+        ISONINEID,
+      </if>
+      <if test="isofour != null">
+        ISOFOUR,
+      </if>
+      <if test="isofourid != null">
+        ISOFOURID,
+      </if>
+      <if test="qsnine != null">
+        QSNINE,
+      </if>
+      <if test="qsnineid != null">
+        QSNINEID,
+      </if>
+      <if test="certification != null">
+        CERTIFICATION,
+      </if>
+      <if test="certificationid != null">
+        CERTIFICATIONID,
+      </if>
+      <if test="domesticname != null">
+        DOMESTICNAME,
+      </if>
+      <if test="domesticbrand != null">
+        DOMESTICBRAND,
+      </if>
+      <if test="enterportname != null">
+        ENTERPORTNAME,
+      </if>
+      <if test="enterportbrand != null">
+        ENTERPORTBRAND,
+      </if>
+      <if test="agencyemployeestotal != null">
+        AGENCYEMPLOYEESTOTAL,
+      </if>
+      <if test="agencyemployeessales != null">
+        AGENCYEMPLOYEESSALES,
+      </if>
+      <if test="onlyagency != null">
+        ONLYAGENCY,
+      </if>
+      <if test="territory != null">
+        TERRITORY,
+      </if>
+      <if test="warehouse != null">
+        WAREHOUSE,
+      </if>
+      <if test="inventory != null">
+        INVENTORY,
+      </if>
+      <if test="deliverymode != null">
+        DELIVERYMODE,
+      </if>
+      <if test="distributionrange != null">
+        DISTRIBUTIONRANGE,
+      </if>
+      <if test="enterprisequalification != null">
+        ENTERPRISEQUALIFICATION,
+      </if>
+      <if test="repairemployeestotal != null">
+        REPAIREMPLOYEESTOTAL,
+      </if>
+      <if test="techniciansemployees != null">
+        TECHNICIANSEMPLOYEES,
+      </if>
+      <if test="workingnum != null">
+        WORKINGNUM,
+      </if>
+      <if test="majormodels != null">
+        MAJORMODELS,
+      </if>
+      <if test="yearrepair != null">
+        YEARREPAIR,
+      </if>
+      <if test="directcompensation != null">
+        DIRECTCOMPENSATION,
+      </if>
+      <if test="cooperatorsinsurance != null">
+        COOPERATORSINSURANCE,
+      </if>
+      <if test="specialmaintenance != null">
+        SPECIALMAINTENANCE,
+      </if>
+      <if test="specialbrand != null">
+        SPECIALBRAND,
+      </if>
+      <if test="isfirstimportagent != null">
+        ISFIRSTIMPORTAGENT,
+      </if>
+      <if test="alliance != null">
+        ALLIANCE,
+      </if>
+      <if test="allianceid != null">
+        ALLIANCEID,
+      </if>
+      <if test="companyphoto != null">
+        COMPANYPHOTO,
+      </if>
+      <if test="qq != null">
+        QQ,
+      </if>
+      <if test="wechat != null">
+        WECHAT,
+      </if>
+      <if test="fax != null">
+        FAX,
+      </if>
+      <if test="accessories != null">
+        ACCESSORIES,
+      </if>
+      <if test="attestationpicture != null">
+        ATTESTATIONPICTURE,
+      </if>
+      <if test="mainbrand != null">
+        MAINBRAND,
+      </if>
+      <if test="isquicklycenter != null">
+        ISQUICKLYCENTER,
+      </if>
+      <if test="deliverregion != null">
+        DELIVERREGION,
+      </if>
+      <if test="iscollectmoney != null">
+        ISCOLLECTMONEY,
+      </if>
+      <if test="canpickup != null">
+        CANPICKUP,
+      </if>
+      <if test="pricestandards != null">
+        PRICESTANDARDS,
+      </if>
+      <if test="cjbj != null">
+        CJBJ,
+      </if>
+      <if test="microSignal != null">
+        MICRO_SIGNAL,
+      </if>
+      <if test="superSeller != null">
+        SUPER_SELLER,
+      </if>
+      <if test="isQd != null">
+        IS_QD,
+      </if>
+      <if test="companyId != null">
+        COMPANY_ID,
+      </if>
+      <if test="qdTime != null">
+        QD_TIME,
+      </if>
+      <if test="validateCode != null">
+        VALIDATE_CODE,
+      </if>
+      <if test="companyphotoa != null">
+        COMPANYPHOTOA,
+      </if>
+      <if test="companyphotob != null">
+        COMPANYPHOTOB,
+      </if>
+      <if test="companyphotoc != null">
+        COMPANYPHOTOC,
+      </if>
+      <if test="creditLevel != null">
+        CREDIT_LEVEL,
+      </if>
+      <if test="integralLevel != null">
+        INTEGRAL_LEVEL,
+      </if>
+      <if test="pid != null">
+        PID,
+      </if>
+      <if test="ismng != null">
+        ISMNG,
+      </if>
+      <if test="isHzKzStatus != null">
+        IS_HZ_KZ_STATUS,
+      </if>
+      <if test="isHzKzSfType != null">
+        IS_HZ_KZ_SF_TYPE,
+      </if>
+      <if test="partsValidateRemark != null">
+        PARTS_VALIDATE_REMARK,
+      </if>
+      <if test="sourceFlag != null">
+        SOURCE_FLAG,
+      </if>
+      <if test="returnCode != null">
+        RETURN_CODE,
+      </if>
+      <if test="merchantCode != null">
+        MERCHANT_CODE,
+      </if>
+      <if test="bankType != null">
+        BANK_TYPE,
+      </if>
+      <if test="creditNo != null">
+        CREDIT_NO,
+      </if>
+      <if test="isAccessFlag != null">
+        IS_ACCESS_FLAG,
+      </if>
+      <if test="autoSelectPjsFlag != null">
+        AUTO_SELECT_PJS_FLAG,
+      </if>
+      <if test="threadNum != null">
+        THREAD_NUM,
+      </if>
+      <if test="messageCode != null">
+        message_code,
+      </if>
+      <if test="expiredTime != null">
+        EXPIRED_TIME,
+      </if>
+      <if test="isCooperateFlag != null">
+        IS_COOPERATE_FLAG,
+      </if>
+      <if test="xjTxFlag != null">
+        XJ_TX_FLAG,
+      </if>
+      <if test="xdTxFlag != null">
+        XD_TX_FLAG,
+      </if>
+      <if test="zfTxFlag != null">
+        ZF_TX_FLAG,
+      </if>
+      <if test="shTxFlag != null">
+        SH_TX_FLAG,
+      </if>
+      <if test="initialTelephone != null">
+        INITIAL_TELEPHONE,
+      </if>
+      <if test="fpCompanyName != null">
+        FP_COMPANY_NAME,
+      </if>
+      <if test="fpIdCode != null">
+        FP_ID_CODE,
+      </if>
+      <if test="fpAddress != null">
+        FP_ADDRESS,
+      </if>
+      <if test="fpPhone != null">
+        FP_PHONE,
+      </if>
+      <if test="fpBankType != null">
+        FP_BANK_TYPE,
+      </if>
+      <if test="fpBankCode != null">
+        FP_BANK_CODE,
+      </if>
+      <if test="aqFpType != null">
+        AQ_FP_TYPE,
+      </if>
+      <if test="fpCommonCompanyName != null">
+        FP_COMMON_COMPANY_NAME,
+      </if>
+      <if test="zyBankType != null">
+        ZY_BANK_TYPE,
+      </if>
+      <if test="zyCreditNo != null">
+        ZY_CREDIT_NO,
+      </if>
+      <if test="zyMerchantCode != null">
+        ZY_MERCHANT_CODE,
+      </if>
+      <if test="areaQuoteManager != null">
+        AREA_QUOTE_MANAGER,
+      </if>
+      <if test="hjAutoSelectPjsFlag != null">
+        HJ_AUTO_SELECT_PJS_FLAG,
+      </if>
+      <if test="pjsSelectRange != null">
+        PJS_SELECT_RANGE,
+      </if>
+      <if test="infoPublicFlag != null">
+        info_public_flag,
+      </if>
+      <if test="shopName != null">
+        shop_name,
+      </if>
+      <if test="doCooperateFlag != null">
+        DO_COOPERATE_FLAG,
+      </if>
+      <if test="isMalluser != null">
+        IS_MALLUSER,
+      </if>
+      <if test="legalpersonName != null">
+        lEGALPERSON_NAME,
+      </if>
+      <if test="legalpersonPictrre != null">
+        lEGALPERSON_PICTRRE,
+      </if>
+      <if test="legalpersonCarded != null">
+        lEGALPERSON_CARDED,
+      </if>
+      <if test="legalpersonPhone != null">
+        lEGALPERSON_PHONE,
+      </if>
+      <if test="yhOrigin != null">
+        YH_ORIGIN,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="dlm != null">
+        #{dlm,jdbcType=VARCHAR},
+      </if>
+      <if test="mm != null">
+        #{mm,jdbcType=VARCHAR},
+      </if>
+      <if test="companyName != null">
+        #{companyName,jdbcType=VARCHAR},
+      </if>
+      <if test="companyShortname != null">
+        #{companyShortname,jdbcType=VARCHAR},
+      </if>
+      <if test="companyIntroduction != null">
+        #{companyIntroduction,jdbcType=VARCHAR},
+      </if>
+      <if test="businessLicense != null">
+        #{businessLicense,jdbcType=VARCHAR},
+      </if>
+      <if test="businessLicensePicture != null">
+        #{businessLicensePicture,jdbcType=VARCHAR},
+      </if>
+      <if test="companyCode != null">
+        #{companyCode,jdbcType=VARCHAR},
+      </if>
+      <if test="companyCodePicture != null">
+        #{companyCodePicture,jdbcType=VARCHAR},
+      </if>
+      <if test="taxRegistrationCode != null">
+        #{taxRegistrationCode,jdbcType=VARCHAR},
+      </if>
+      <if test="taxRegistrationCodePicture != null">
+        #{taxRegistrationCodePicture,jdbcType=VARCHAR},
+      </if>
+      <if test="province != null">
+        #{province,jdbcType=VARCHAR},
+      </if>
+      <if test="area != null">
+        #{area,jdbcType=VARCHAR},
+      </if>
+      <if test="city != null">
+        #{city,jdbcType=VARCHAR},
+      </if>
+      <if test="telephone != null">
+        #{telephone,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null">
+        #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="address != null">
+        #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="userType != null">
+        #{userType,jdbcType=VARCHAR},
+      </if>
+      <if test="delFlag != null">
+        #{delFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createBy != null">
+        #{createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null">
+        #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateBy != null">
+        #{updateBy,jdbcType=VARCHAR},
+      </if>
+      <if test="shbz != null">
+        #{shbz,jdbcType=VARCHAR},
+      </if>
+      <if test="dataComplete != null">
+        #{dataComplete,jdbcType=VARCHAR},
+      </if>
+      <if test="csyj != null">
+        #{csyj,jdbcType=VARCHAR},
+      </if>
+      <if test="zsyj != null">
+        #{zsyj,jdbcType=VARCHAR},
+      </if>
+      <if test="lxr != null">
+        #{lxr,jdbcType=VARCHAR},
+      </if>
+      <if test="provinceName != null">
+        #{provinceName,jdbcType=VARCHAR},
+      </if>
+      <if test="areaName != null">
+        #{areaName,jdbcType=VARCHAR},
+      </if>
+      <if test="cityName != null">
+        #{cityName,jdbcType=VARCHAR},
+      </if>
+      <if test="csrq != null">
+        #{csrq,jdbcType=VARCHAR},
+      </if>
+      <if test="zsrq != null">
+        #{zsrq,jdbcType=VARCHAR},
+      </if>
+      <if test="csyh != null">
+        #{csyh,jdbcType=VARCHAR},
+      </if>
+      <if test="zsyh != null">
+        #{zsyh,jdbcType=VARCHAR},
+      </if>
+      <if test="organizationCode != null">
+        #{organizationCode,jdbcType=VARCHAR},
+      </if>
+      <if test="enterprisecharacter != null">
+        #{enterprisecharacter,jdbcType=VARCHAR},
+      </if>
+      <if test="businessscope != null">
+        #{businessscope,jdbcType=VARCHAR},
+      </if>
+      <if test="registeredcapital != null">
+        #{registeredcapital,jdbcType=VARCHAR},
+      </if>
+      <if test="legalrepresentative != null">
+        #{legalrepresentative,jdbcType=VARCHAR},
+      </if>
+      <if test="establishments != null">
+        #{establishments,jdbcType=VARCHAR},
+      </if>
+      <if test="postalcode != null">
+        #{postalcode,jdbcType=VARCHAR},
+      </if>
+      <if test="resourcelocator != null">
+        #{resourcelocator,jdbcType=VARCHAR},
+      </if>
+      <if test="enterprisescoordinate != null">
+        #{enterprisescoordinate,jdbcType=VARCHAR},
+      </if>
+      <if test="productname != null">
+        #{productname,jdbcType=VARCHAR},
+      </if>
+      <if test="brand != null">
+        #{brand,jdbcType=VARCHAR},
+      </if>
+      <if test="employeestotal != null">
+        #{employeestotal,jdbcType=VARCHAR},
+      </if>
+      <if test="productionemployees != null">
+        #{productionemployees,jdbcType=VARCHAR},
+      </if>
+      <if test="worksemployees != null">
+        #{worksemployees,jdbcType=VARCHAR},
+      </if>
+      <if test="manageemployees != null">
+        #{manageemployees,jdbcType=VARCHAR},
+      </if>
+      <if test="developemployees != null">
+        #{developemployees,jdbcType=VARCHAR},
+      </if>
+      <if test="qualityemployees != null">
+        #{qualityemployees,jdbcType=VARCHAR},
+      </if>
+      <if test="agency != null">
+        #{agency,jdbcType=VARCHAR},
+      </if>
+      <if test="normaldeliveryday != null">
+        #{normaldeliveryday,jdbcType=VARCHAR},
+      </if>
+      <if test="bulkshipmentsday != null">
+        #{bulkshipmentsday,jdbcType=VARCHAR},
+      </if>
+      <if test="isonine != null">
+        #{isonine,jdbcType=VARCHAR},
+      </if>
+      <if test="isonineid != null">
+        #{isonineid,jdbcType=VARCHAR},
+      </if>
+      <if test="isofour != null">
+        #{isofour,jdbcType=VARCHAR},
+      </if>
+      <if test="isofourid != null">
+        #{isofourid,jdbcType=VARCHAR},
+      </if>
+      <if test="qsnine != null">
+        #{qsnine,jdbcType=VARCHAR},
+      </if>
+      <if test="qsnineid != null">
+        #{qsnineid,jdbcType=VARCHAR},
+      </if>
+      <if test="certification != null">
+        #{certification,jdbcType=VARCHAR},
+      </if>
+      <if test="certificationid != null">
+        #{certificationid,jdbcType=VARCHAR},
+      </if>
+      <if test="domesticname != null">
+        #{domesticname,jdbcType=VARCHAR},
+      </if>
+      <if test="domesticbrand != null">
+        #{domesticbrand,jdbcType=VARCHAR},
+      </if>
+      <if test="enterportname != null">
+        #{enterportname,jdbcType=VARCHAR},
+      </if>
+      <if test="enterportbrand != null">
+        #{enterportbrand,jdbcType=VARCHAR},
+      </if>
+      <if test="agencyemployeestotal != null">
+        #{agencyemployeestotal,jdbcType=VARCHAR},
+      </if>
+      <if test="agencyemployeessales != null">
+        #{agencyemployeessales,jdbcType=VARCHAR},
+      </if>
+      <if test="onlyagency != null">
+        #{onlyagency,jdbcType=VARCHAR},
+      </if>
+      <if test="territory != null">
+        #{territory,jdbcType=VARCHAR},
+      </if>
+      <if test="warehouse != null">
+        #{warehouse,jdbcType=VARCHAR},
+      </if>
+      <if test="inventory != null">
+        #{inventory,jdbcType=VARCHAR},
+      </if>
+      <if test="deliverymode != null">
+        #{deliverymode,jdbcType=VARCHAR},
+      </if>
+      <if test="distributionrange != null">
+        #{distributionrange,jdbcType=VARCHAR},
+      </if>
+      <if test="enterprisequalification != null">
+        #{enterprisequalification,jdbcType=VARCHAR},
+      </if>
+      <if test="repairemployeestotal != null">
+        #{repairemployeestotal,jdbcType=VARCHAR},
+      </if>
+      <if test="techniciansemployees != null">
+        #{techniciansemployees,jdbcType=VARCHAR},
+      </if>
+      <if test="workingnum != null">
+        #{workingnum,jdbcType=VARCHAR},
+      </if>
+      <if test="majormodels != null">
+        #{majormodels,jdbcType=VARCHAR},
+      </if>
+      <if test="yearrepair != null">
+        #{yearrepair,jdbcType=VARCHAR},
+      </if>
+      <if test="directcompensation != null">
+        #{directcompensation,jdbcType=VARCHAR},
+      </if>
+      <if test="cooperatorsinsurance != null">
+        #{cooperatorsinsurance,jdbcType=VARCHAR},
+      </if>
+      <if test="specialmaintenance != null">
+        #{specialmaintenance,jdbcType=VARCHAR},
+      </if>
+      <if test="specialbrand != null">
+        #{specialbrand,jdbcType=VARCHAR},
+      </if>
+      <if test="isfirstimportagent != null">
+        #{isfirstimportagent,jdbcType=VARCHAR},
+      </if>
+      <if test="alliance != null">
+        #{alliance,jdbcType=VARCHAR},
+      </if>
+      <if test="allianceid != null">
+        #{allianceid,jdbcType=VARCHAR},
+      </if>
+      <if test="companyphoto != null">
+        #{companyphoto,jdbcType=VARCHAR},
+      </if>
+      <if test="qq != null">
+        #{qq,jdbcType=VARCHAR},
+      </if>
+      <if test="wechat != null">
+        #{wechat,jdbcType=VARCHAR},
+      </if>
+      <if test="fax != null">
+        #{fax,jdbcType=VARCHAR},
+      </if>
+      <if test="accessories != null">
+        #{accessories,jdbcType=VARCHAR},
+      </if>
+      <if test="attestationpicture != null">
+        #{attestationpicture,jdbcType=VARCHAR},
+      </if>
+      <if test="mainbrand != null">
+        #{mainbrand,jdbcType=VARCHAR},
+      </if>
+      <if test="isquicklycenter != null">
+        #{isquicklycenter,jdbcType=VARCHAR},
+      </if>
+      <if test="deliverregion != null">
+        #{deliverregion,jdbcType=VARCHAR},
+      </if>
+      <if test="iscollectmoney != null">
+        #{iscollectmoney,jdbcType=VARCHAR},
+      </if>
+      <if test="canpickup != null">
+        #{canpickup,jdbcType=VARCHAR},
+      </if>
+      <if test="pricestandards != null">
+        #{pricestandards,jdbcType=VARCHAR},
+      </if>
+      <if test="cjbj != null">
+        #{cjbj,jdbcType=VARCHAR},
+      </if>
+      <if test="microSignal != null">
+        #{microSignal,jdbcType=VARCHAR},
+      </if>
+      <if test="superSeller != null">
+        #{superSeller,jdbcType=VARCHAR},
+      </if>
+      <if test="isQd != null">
+        #{isQd,jdbcType=VARCHAR},
+      </if>
+      <if test="companyId != null">
+        #{companyId,jdbcType=VARCHAR},
+      </if>
+      <if test="qdTime != null">
+        #{qdTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="validateCode != null">
+        #{validateCode,jdbcType=VARCHAR},
+      </if>
+      <if test="companyphotoa != null">
+        #{companyphotoa,jdbcType=VARCHAR},
+      </if>
+      <if test="companyphotob != null">
+        #{companyphotob,jdbcType=VARCHAR},
+      </if>
+      <if test="companyphotoc != null">
+        #{companyphotoc,jdbcType=VARCHAR},
+      </if>
+      <if test="creditLevel != null">
+        #{creditLevel,jdbcType=INTEGER},
+      </if>
+      <if test="integralLevel != null">
+        #{integralLevel,jdbcType=INTEGER},
+      </if>
+      <if test="pid != null">
+        #{pid,jdbcType=VARCHAR},
+      </if>
+      <if test="ismng != null">
+        #{ismng,jdbcType=VARCHAR},
+      </if>
+      <if test="isHzKzStatus != null">
+        #{isHzKzStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="isHzKzSfType != null">
+        #{isHzKzSfType,jdbcType=VARCHAR},
+      </if>
+      <if test="partsValidateRemark != null">
+        #{partsValidateRemark,jdbcType=VARCHAR},
+      </if>
+      <if test="sourceFlag != null">
+        #{sourceFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="returnCode != null">
+        #{returnCode,jdbcType=VARCHAR},
+      </if>
+      <if test="merchantCode != null">
+        #{merchantCode,jdbcType=VARCHAR},
+      </if>
+      <if test="bankType != null">
+        #{bankType,jdbcType=VARCHAR},
+      </if>
+      <if test="creditNo != null">
+        #{creditNo,jdbcType=VARCHAR},
+      </if>
+      <if test="isAccessFlag != null">
+        #{isAccessFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="autoSelectPjsFlag != null">
+        #{autoSelectPjsFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="threadNum != null">
+        #{threadNum,jdbcType=INTEGER},
+      </if>
+      <if test="messageCode != null">
+        #{messageCode,jdbcType=VARCHAR},
+      </if>
+      <if test="expiredTime != null">
+        #{expiredTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isCooperateFlag != null">
+        #{isCooperateFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="xjTxFlag != null">
+        #{xjTxFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="xdTxFlag != null">
+        #{xdTxFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="zfTxFlag != null">
+        #{zfTxFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="shTxFlag != null">
+        #{shTxFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="initialTelephone != null">
+        #{initialTelephone,jdbcType=VARCHAR},
+      </if>
+      <if test="fpCompanyName != null">
+        #{fpCompanyName,jdbcType=VARCHAR},
+      </if>
+      <if test="fpIdCode != null">
+        #{fpIdCode,jdbcType=VARCHAR},
+      </if>
+      <if test="fpAddress != null">
+        #{fpAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="fpPhone != null">
+        #{fpPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="fpBankType != null">
+        #{fpBankType,jdbcType=VARCHAR},
+      </if>
+      <if test="fpBankCode != null">
+        #{fpBankCode,jdbcType=VARCHAR},
+      </if>
+      <if test="aqFpType != null">
+        #{aqFpType,jdbcType=VARCHAR},
+      </if>
+      <if test="fpCommonCompanyName != null">
+        #{fpCommonCompanyName,jdbcType=VARCHAR},
+      </if>
+      <if test="zyBankType != null">
+        #{zyBankType,jdbcType=VARCHAR},
+      </if>
+      <if test="zyCreditNo != null">
+        #{zyCreditNo,jdbcType=VARCHAR},
+      </if>
+      <if test="zyMerchantCode != null">
+        #{zyMerchantCode,jdbcType=VARCHAR},
+      </if>
+      <if test="areaQuoteManager != null">
+        #{areaQuoteManager,jdbcType=VARCHAR},
+      </if>
+      <if test="hjAutoSelectPjsFlag != null">
+        #{hjAutoSelectPjsFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="pjsSelectRange != null">
+        #{pjsSelectRange,jdbcType=VARCHAR},
+      </if>
+      <if test="infoPublicFlag != null">
+        #{infoPublicFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="shopName != null">
+        #{shopName,jdbcType=VARCHAR},
+      </if>
+      <if test="doCooperateFlag != null">
+        #{doCooperateFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="isMalluser != null">
+        #{isMalluser,jdbcType=VARCHAR},
+      </if>
+      <if test="legalpersonName != null">
+        #{legalpersonName,jdbcType=VARCHAR},
+      </if>
+      <if test="legalpersonPictrre != null">
+        #{legalpersonPictrre,jdbcType=VARCHAR},
+      </if>
+      <if test="legalpersonCarded != null">
+        #{legalpersonCarded,jdbcType=VARCHAR},
+      </if>
+      <if test="legalpersonPhone != null">
+        #{legalpersonPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="yhOrigin != null">
+        #{yhOrigin,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ssm.demo.models.AqYhxxbDetail">
+    update aq_yhxxb_detail
+    <set>
+      <if test="dlm != null">
+        DLM = #{dlm,jdbcType=VARCHAR},
+      </if>
+      <if test="mm != null">
+        MM = #{mm,jdbcType=VARCHAR},
+      </if>
+      <if test="companyName != null">
+        COMPANY_NAME = #{companyName,jdbcType=VARCHAR},
+      </if>
+      <if test="companyShortname != null">
+        COMPANY_SHORTNAME = #{companyShortname,jdbcType=VARCHAR},
+      </if>
+      <if test="companyIntroduction != null">
+        COMPANY_INTRODUCTION = #{companyIntroduction,jdbcType=VARCHAR},
+      </if>
+      <if test="businessLicense != null">
+        BUSINESS_LICENSE = #{businessLicense,jdbcType=VARCHAR},
+      </if>
+      <if test="businessLicensePicture != null">
+        BUSINESS_LICENSE_PICTURE = #{businessLicensePicture,jdbcType=VARCHAR},
+      </if>
+      <if test="companyCode != null">
+        COMPANY_CODE = #{companyCode,jdbcType=VARCHAR},
+      </if>
+      <if test="companyCodePicture != null">
+        COMPANY_CODE_PICTURE = #{companyCodePicture,jdbcType=VARCHAR},
+      </if>
+      <if test="taxRegistrationCode != null">
+        TAX_REGISTRATION_CODE = #{taxRegistrationCode,jdbcType=VARCHAR},
+      </if>
+      <if test="taxRegistrationCodePicture != null">
+        TAX_REGISTRATION_CODE_PICTURE = #{taxRegistrationCodePicture,jdbcType=VARCHAR},
+      </if>
+      <if test="province != null">
+        PROVINCE = #{province,jdbcType=VARCHAR},
+      </if>
+      <if test="area != null">
+        AREA = #{area,jdbcType=VARCHAR},
+      </if>
+      <if test="city != null">
+        CITY = #{city,jdbcType=VARCHAR},
+      </if>
+      <if test="telephone != null">
+        TELEPHONE = #{telephone,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null">
+        PHONE = #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="address != null">
+        ADDRESS = #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        EMAIL = #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="userType != null">
+        USER_TYPE = #{userType,jdbcType=VARCHAR},
+      </if>
+      <if test="delFlag != null">
+        DEL_FLAG = #{delFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        CREATE_DATE = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createBy != null">
+        CREATE_BY = #{createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null">
+        UPDATE_DATE = #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateBy != null">
+        UPDATE_BY = #{updateBy,jdbcType=VARCHAR},
+      </if>
+      <if test="shbz != null">
+        SHBZ = #{shbz,jdbcType=VARCHAR},
+      </if>
+      <if test="dataComplete != null">
+        DATA_COMPLETE = #{dataComplete,jdbcType=VARCHAR},
+      </if>
+      <if test="csyj != null">
+        CSYJ = #{csyj,jdbcType=VARCHAR},
+      </if>
+      <if test="zsyj != null">
+        ZSYJ = #{zsyj,jdbcType=VARCHAR},
+      </if>
+      <if test="lxr != null">
+        LXR = #{lxr,jdbcType=VARCHAR},
+      </if>
+      <if test="provinceName != null">
+        PROVINCE_NAME = #{provinceName,jdbcType=VARCHAR},
+      </if>
+      <if test="areaName != null">
+        AREA_NAME = #{areaName,jdbcType=VARCHAR},
+      </if>
+      <if test="cityName != null">
+        CITY_NAME = #{cityName,jdbcType=VARCHAR},
+      </if>
+      <if test="csrq != null">
+        CSRQ = #{csrq,jdbcType=VARCHAR},
+      </if>
+      <if test="zsrq != null">
+        ZSRQ = #{zsrq,jdbcType=VARCHAR},
+      </if>
+      <if test="csyh != null">
+        CSYH = #{csyh,jdbcType=VARCHAR},
+      </if>
+      <if test="zsyh != null">
+        ZSYH = #{zsyh,jdbcType=VARCHAR},
+      </if>
+      <if test="organizationCode != null">
+        ORGANIZATION_CODE = #{organizationCode,jdbcType=VARCHAR},
+      </if>
+      <if test="enterprisecharacter != null">
+        ENTERPRISECHARACTER = #{enterprisecharacter,jdbcType=VARCHAR},
+      </if>
+      <if test="businessscope != null">
+        BUSINESSSCOPE = #{businessscope,jdbcType=VARCHAR},
+      </if>
+      <if test="registeredcapital != null">
+        REGISTEREDCAPITAL = #{registeredcapital,jdbcType=VARCHAR},
+      </if>
+      <if test="legalrepresentative != null">
+        LEGALREPRESENTATIVE = #{legalrepresentative,jdbcType=VARCHAR},
+      </if>
+      <if test="establishments != null">
+        ESTABLISHMENTS = #{establishments,jdbcType=VARCHAR},
+      </if>
+      <if test="postalcode != null">
+        POSTALCODE = #{postalcode,jdbcType=VARCHAR},
+      </if>
+      <if test="resourcelocator != null">
+        RESOURCELOCATOR = #{resourcelocator,jdbcType=VARCHAR},
+      </if>
+      <if test="enterprisescoordinate != null">
+        ENTERPRISESCOORDINATE = #{enterprisescoordinate,jdbcType=VARCHAR},
+      </if>
+      <if test="productname != null">
+        PRODUCTNAME = #{productname,jdbcType=VARCHAR},
+      </if>
+      <if test="brand != null">
+        BRAND = #{brand,jdbcType=VARCHAR},
+      </if>
+      <if test="employeestotal != null">
+        EMPLOYEESTOTAL = #{employeestotal,jdbcType=VARCHAR},
+      </if>
+      <if test="productionemployees != null">
+        PRODUCTIONEMPLOYEES = #{productionemployees,jdbcType=VARCHAR},
+      </if>
+      <if test="worksemployees != null">
+        WORKSEMPLOYEES = #{worksemployees,jdbcType=VARCHAR},
+      </if>
+      <if test="manageemployees != null">
+        MANAGEEMPLOYEES = #{manageemployees,jdbcType=VARCHAR},
+      </if>
+      <if test="developemployees != null">
+        DEVELOPEMPLOYEES = #{developemployees,jdbcType=VARCHAR},
+      </if>
+      <if test="qualityemployees != null">
+        QUALITYEMPLOYEES = #{qualityemployees,jdbcType=VARCHAR},
+      </if>
+      <if test="agency != null">
+        AGENCY = #{agency,jdbcType=VARCHAR},
+      </if>
+      <if test="normaldeliveryday != null">
+        NORMALDELIVERYDAY = #{normaldeliveryday,jdbcType=VARCHAR},
+      </if>
+      <if test="bulkshipmentsday != null">
+        BULKSHIPMENTSDAY = #{bulkshipmentsday,jdbcType=VARCHAR},
+      </if>
+      <if test="isonine != null">
+        ISONINE = #{isonine,jdbcType=VARCHAR},
+      </if>
+      <if test="isonineid != null">
+        ISONINEID = #{isonineid,jdbcType=VARCHAR},
+      </if>
+      <if test="isofour != null">
+        ISOFOUR = #{isofour,jdbcType=VARCHAR},
+      </if>
+      <if test="isofourid != null">
+        ISOFOURID = #{isofourid,jdbcType=VARCHAR},
+      </if>
+      <if test="qsnine != null">
+        QSNINE = #{qsnine,jdbcType=VARCHAR},
+      </if>
+      <if test="qsnineid != null">
+        QSNINEID = #{qsnineid,jdbcType=VARCHAR},
+      </if>
+      <if test="certification != null">
+        CERTIFICATION = #{certification,jdbcType=VARCHAR},
+      </if>
+      <if test="certificationid != null">
+        CERTIFICATIONID = #{certificationid,jdbcType=VARCHAR},
+      </if>
+      <if test="domesticname != null">
+        DOMESTICNAME = #{domesticname,jdbcType=VARCHAR},
+      </if>
+      <if test="domesticbrand != null">
+        DOMESTICBRAND = #{domesticbrand,jdbcType=VARCHAR},
+      </if>
+      <if test="enterportname != null">
+        ENTERPORTNAME = #{enterportname,jdbcType=VARCHAR},
+      </if>
+      <if test="enterportbrand != null">
+        ENTERPORTBRAND = #{enterportbrand,jdbcType=VARCHAR},
+      </if>
+      <if test="agencyemployeestotal != null">
+        AGENCYEMPLOYEESTOTAL = #{agencyemployeestotal,jdbcType=VARCHAR},
+      </if>
+      <if test="agencyemployeessales != null">
+        AGENCYEMPLOYEESSALES = #{agencyemployeessales,jdbcType=VARCHAR},
+      </if>
+      <if test="onlyagency != null">
+        ONLYAGENCY = #{onlyagency,jdbcType=VARCHAR},
+      </if>
+      <if test="territory != null">
+        TERRITORY = #{territory,jdbcType=VARCHAR},
+      </if>
+      <if test="warehouse != null">
+        WAREHOUSE = #{warehouse,jdbcType=VARCHAR},
+      </if>
+      <if test="inventory != null">
+        INVENTORY = #{inventory,jdbcType=VARCHAR},
+      </if>
+      <if test="deliverymode != null">
+        DELIVERYMODE = #{deliverymode,jdbcType=VARCHAR},
+      </if>
+      <if test="distributionrange != null">
+        DISTRIBUTIONRANGE = #{distributionrange,jdbcType=VARCHAR},
+      </if>
+      <if test="enterprisequalification != null">
+        ENTERPRISEQUALIFICATION = #{enterprisequalification,jdbcType=VARCHAR},
+      </if>
+      <if test="repairemployeestotal != null">
+        REPAIREMPLOYEESTOTAL = #{repairemployeestotal,jdbcType=VARCHAR},
+      </if>
+      <if test="techniciansemployees != null">
+        TECHNICIANSEMPLOYEES = #{techniciansemployees,jdbcType=VARCHAR},
+      </if>
+      <if test="workingnum != null">
+        WORKINGNUM = #{workingnum,jdbcType=VARCHAR},
+      </if>
+      <if test="majormodels != null">
+        MAJORMODELS = #{majormodels,jdbcType=VARCHAR},
+      </if>
+      <if test="yearrepair != null">
+        YEARREPAIR = #{yearrepair,jdbcType=VARCHAR},
+      </if>
+      <if test="directcompensation != null">
+        DIRECTCOMPENSATION = #{directcompensation,jdbcType=VARCHAR},
+      </if>
+      <if test="cooperatorsinsurance != null">
+        COOPERATORSINSURANCE = #{cooperatorsinsurance,jdbcType=VARCHAR},
+      </if>
+      <if test="specialmaintenance != null">
+        SPECIALMAINTENANCE = #{specialmaintenance,jdbcType=VARCHAR},
+      </if>
+      <if test="specialbrand != null">
+        SPECIALBRAND = #{specialbrand,jdbcType=VARCHAR},
+      </if>
+      <if test="isfirstimportagent != null">
+        ISFIRSTIMPORTAGENT = #{isfirstimportagent,jdbcType=VARCHAR},
+      </if>
+      <if test="alliance != null">
+        ALLIANCE = #{alliance,jdbcType=VARCHAR},
+      </if>
+      <if test="allianceid != null">
+        ALLIANCEID = #{allianceid,jdbcType=VARCHAR},
+      </if>
+      <if test="companyphoto != null">
+        COMPANYPHOTO = #{companyphoto,jdbcType=VARCHAR},
+      </if>
+      <if test="qq != null">
+        QQ = #{qq,jdbcType=VARCHAR},
+      </if>
+      <if test="wechat != null">
+        WECHAT = #{wechat,jdbcType=VARCHAR},
+      </if>
+      <if test="fax != null">
+        FAX = #{fax,jdbcType=VARCHAR},
+      </if>
+      <if test="accessories != null">
+        ACCESSORIES = #{accessories,jdbcType=VARCHAR},
+      </if>
+      <if test="attestationpicture != null">
+        ATTESTATIONPICTURE = #{attestationpicture,jdbcType=VARCHAR},
+      </if>
+      <if test="mainbrand != null">
+        MAINBRAND = #{mainbrand,jdbcType=VARCHAR},
+      </if>
+      <if test="isquicklycenter != null">
+        ISQUICKLYCENTER = #{isquicklycenter,jdbcType=VARCHAR},
+      </if>
+      <if test="deliverregion != null">
+        DELIVERREGION = #{deliverregion,jdbcType=VARCHAR},
+      </if>
+      <if test="iscollectmoney != null">
+        ISCOLLECTMONEY = #{iscollectmoney,jdbcType=VARCHAR},
+      </if>
+      <if test="canpickup != null">
+        CANPICKUP = #{canpickup,jdbcType=VARCHAR},
+      </if>
+      <if test="pricestandards != null">
+        PRICESTANDARDS = #{pricestandards,jdbcType=VARCHAR},
+      </if>
+      <if test="cjbj != null">
+        CJBJ = #{cjbj,jdbcType=VARCHAR},
+      </if>
+      <if test="microSignal != null">
+        MICRO_SIGNAL = #{microSignal,jdbcType=VARCHAR},
+      </if>
+      <if test="superSeller != null">
+        SUPER_SELLER = #{superSeller,jdbcType=VARCHAR},
+      </if>
+      <if test="isQd != null">
+        IS_QD = #{isQd,jdbcType=VARCHAR},
+      </if>
+      <if test="companyId != null">
+        COMPANY_ID = #{companyId,jdbcType=VARCHAR},
+      </if>
+      <if test="qdTime != null">
+        QD_TIME = #{qdTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="validateCode != null">
+        VALIDATE_CODE = #{validateCode,jdbcType=VARCHAR},
+      </if>
+      <if test="companyphotoa != null">
+        COMPANYPHOTOA = #{companyphotoa,jdbcType=VARCHAR},
+      </if>
+      <if test="companyphotob != null">
+        COMPANYPHOTOB = #{companyphotob,jdbcType=VARCHAR},
+      </if>
+      <if test="companyphotoc != null">
+        COMPANYPHOTOC = #{companyphotoc,jdbcType=VARCHAR},
+      </if>
+      <if test="creditLevel != null">
+        CREDIT_LEVEL = #{creditLevel,jdbcType=INTEGER},
+      </if>
+      <if test="integralLevel != null">
+        INTEGRAL_LEVEL = #{integralLevel,jdbcType=INTEGER},
+      </if>
+      <if test="pid != null">
+        PID = #{pid,jdbcType=VARCHAR},
+      </if>
+      <if test="ismng != null">
+        ISMNG = #{ismng,jdbcType=VARCHAR},
+      </if>
+      <if test="isHzKzStatus != null">
+        IS_HZ_KZ_STATUS = #{isHzKzStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="isHzKzSfType != null">
+        IS_HZ_KZ_SF_TYPE = #{isHzKzSfType,jdbcType=VARCHAR},
+      </if>
+      <if test="partsValidateRemark != null">
+        PARTS_VALIDATE_REMARK = #{partsValidateRemark,jdbcType=VARCHAR},
+      </if>
+      <if test="sourceFlag != null">
+        SOURCE_FLAG = #{sourceFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="returnCode != null">
+        RETURN_CODE = #{returnCode,jdbcType=VARCHAR},
+      </if>
+      <if test="merchantCode != null">
+        MERCHANT_CODE = #{merchantCode,jdbcType=VARCHAR},
+      </if>
+      <if test="bankType != null">
+        BANK_TYPE = #{bankType,jdbcType=VARCHAR},
+      </if>
+      <if test="creditNo != null">
+        CREDIT_NO = #{creditNo,jdbcType=VARCHAR},
+      </if>
+      <if test="isAccessFlag != null">
+        IS_ACCESS_FLAG = #{isAccessFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="autoSelectPjsFlag != null">
+        AUTO_SELECT_PJS_FLAG = #{autoSelectPjsFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="threadNum != null">
+        THREAD_NUM = #{threadNum,jdbcType=INTEGER},
+      </if>
+      <if test="messageCode != null">
+        message_code = #{messageCode,jdbcType=VARCHAR},
+      </if>
+      <if test="expiredTime != null">
+        EXPIRED_TIME = #{expiredTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isCooperateFlag != null">
+        IS_COOPERATE_FLAG = #{isCooperateFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="xjTxFlag != null">
+        XJ_TX_FLAG = #{xjTxFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="xdTxFlag != null">
+        XD_TX_FLAG = #{xdTxFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="zfTxFlag != null">
+        ZF_TX_FLAG = #{zfTxFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="shTxFlag != null">
+        SH_TX_FLAG = #{shTxFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="initialTelephone != null">
+        INITIAL_TELEPHONE = #{initialTelephone,jdbcType=VARCHAR},
+      </if>
+      <if test="fpCompanyName != null">
+        FP_COMPANY_NAME = #{fpCompanyName,jdbcType=VARCHAR},
+      </if>
+      <if test="fpIdCode != null">
+        FP_ID_CODE = #{fpIdCode,jdbcType=VARCHAR},
+      </if>
+      <if test="fpAddress != null">
+        FP_ADDRESS = #{fpAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="fpPhone != null">
+        FP_PHONE = #{fpPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="fpBankType != null">
+        FP_BANK_TYPE = #{fpBankType,jdbcType=VARCHAR},
+      </if>
+      <if test="fpBankCode != null">
+        FP_BANK_CODE = #{fpBankCode,jdbcType=VARCHAR},
+      </if>
+      <if test="aqFpType != null">
+        AQ_FP_TYPE = #{aqFpType,jdbcType=VARCHAR},
+      </if>
+      <if test="fpCommonCompanyName != null">
+        FP_COMMON_COMPANY_NAME = #{fpCommonCompanyName,jdbcType=VARCHAR},
+      </if>
+      <if test="zyBankType != null">
+        ZY_BANK_TYPE = #{zyBankType,jdbcType=VARCHAR},
+      </if>
+      <if test="zyCreditNo != null">
+        ZY_CREDIT_NO = #{zyCreditNo,jdbcType=VARCHAR},
+      </if>
+      <if test="zyMerchantCode != null">
+        ZY_MERCHANT_CODE = #{zyMerchantCode,jdbcType=VARCHAR},
+      </if>
+      <if test="areaQuoteManager != null">
+        AREA_QUOTE_MANAGER = #{areaQuoteManager,jdbcType=VARCHAR},
+      </if>
+      <if test="hjAutoSelectPjsFlag != null">
+        HJ_AUTO_SELECT_PJS_FLAG = #{hjAutoSelectPjsFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="pjsSelectRange != null">
+        PJS_SELECT_RANGE = #{pjsSelectRange,jdbcType=VARCHAR},
+      </if>
+      <if test="infoPublicFlag != null">
+        info_public_flag = #{infoPublicFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="shopName != null">
+        shop_name = #{shopName,jdbcType=VARCHAR},
+      </if>
+      <if test="doCooperateFlag != null">
+        DO_COOPERATE_FLAG = #{doCooperateFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="isMalluser != null">
+        IS_MALLUSER = #{isMalluser,jdbcType=VARCHAR},
+      </if>
+      <if test="legalpersonName != null">
+        lEGALPERSON_NAME = #{legalpersonName,jdbcType=VARCHAR},
+      </if>
+      <if test="legalpersonPictrre != null">
+        lEGALPERSON_PICTRRE = #{legalpersonPictrre,jdbcType=VARCHAR},
+      </if>
+      <if test="legalpersonCarded != null">
+        lEGALPERSON_CARDED = #{legalpersonCarded,jdbcType=VARCHAR},
+      </if>
+      <if test="legalpersonPhone != null">
+        lEGALPERSON_PHONE = #{legalpersonPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="yhOrigin != null">
+        YH_ORIGIN = #{yhOrigin,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ssm.demo.models.AqYhxxbDetail">
+    update aq_yhxxb_detail
+    set DLM = #{dlm,jdbcType=VARCHAR},
+      MM = #{mm,jdbcType=VARCHAR},
+      COMPANY_NAME = #{companyName,jdbcType=VARCHAR},
+      COMPANY_SHORTNAME = #{companyShortname,jdbcType=VARCHAR},
+      COMPANY_INTRODUCTION = #{companyIntroduction,jdbcType=VARCHAR},
+      BUSINESS_LICENSE = #{businessLicense,jdbcType=VARCHAR},
+      BUSINESS_LICENSE_PICTURE = #{businessLicensePicture,jdbcType=VARCHAR},
+      COMPANY_CODE = #{companyCode,jdbcType=VARCHAR},
+      COMPANY_CODE_PICTURE = #{companyCodePicture,jdbcType=VARCHAR},
+      TAX_REGISTRATION_CODE = #{taxRegistrationCode,jdbcType=VARCHAR},
+      TAX_REGISTRATION_CODE_PICTURE = #{taxRegistrationCodePicture,jdbcType=VARCHAR},
+      PROVINCE = #{province,jdbcType=VARCHAR},
+      AREA = #{area,jdbcType=VARCHAR},
+      CITY = #{city,jdbcType=VARCHAR},
+      TELEPHONE = #{telephone,jdbcType=VARCHAR},
+      PHONE = #{phone,jdbcType=VARCHAR},
+      ADDRESS = #{address,jdbcType=VARCHAR},
+      EMAIL = #{email,jdbcType=VARCHAR},
+      USER_TYPE = #{userType,jdbcType=VARCHAR},
+      DEL_FLAG = #{delFlag,jdbcType=VARCHAR},
+      CREATE_DATE = #{createDate,jdbcType=TIMESTAMP},
+      CREATE_BY = #{createBy,jdbcType=VARCHAR},
+      UPDATE_DATE = #{updateDate,jdbcType=TIMESTAMP},
+      UPDATE_BY = #{updateBy,jdbcType=VARCHAR},
+      SHBZ = #{shbz,jdbcType=VARCHAR},
+      DATA_COMPLETE = #{dataComplete,jdbcType=VARCHAR},
+      CSYJ = #{csyj,jdbcType=VARCHAR},
+      ZSYJ = #{zsyj,jdbcType=VARCHAR},
+      LXR = #{lxr,jdbcType=VARCHAR},
+      PROVINCE_NAME = #{provinceName,jdbcType=VARCHAR},
+      AREA_NAME = #{areaName,jdbcType=VARCHAR},
+      CITY_NAME = #{cityName,jdbcType=VARCHAR},
+      CSRQ = #{csrq,jdbcType=VARCHAR},
+      ZSRQ = #{zsrq,jdbcType=VARCHAR},
+      CSYH = #{csyh,jdbcType=VARCHAR},
+      ZSYH = #{zsyh,jdbcType=VARCHAR},
+      ORGANIZATION_CODE = #{organizationCode,jdbcType=VARCHAR},
+      ENTERPRISECHARACTER = #{enterprisecharacter,jdbcType=VARCHAR},
+      BUSINESSSCOPE = #{businessscope,jdbcType=VARCHAR},
+      REGISTEREDCAPITAL = #{registeredcapital,jdbcType=VARCHAR},
+      LEGALREPRESENTATIVE = #{legalrepresentative,jdbcType=VARCHAR},
+      ESTABLISHMENTS = #{establishments,jdbcType=VARCHAR},
+      POSTALCODE = #{postalcode,jdbcType=VARCHAR},
+      RESOURCELOCATOR = #{resourcelocator,jdbcType=VARCHAR},
+      ENTERPRISESCOORDINATE = #{enterprisescoordinate,jdbcType=VARCHAR},
+      PRODUCTNAME = #{productname,jdbcType=VARCHAR},
+      BRAND = #{brand,jdbcType=VARCHAR},
+      EMPLOYEESTOTAL = #{employeestotal,jdbcType=VARCHAR},
+      PRODUCTIONEMPLOYEES = #{productionemployees,jdbcType=VARCHAR},
+      WORKSEMPLOYEES = #{worksemployees,jdbcType=VARCHAR},
+      MANAGEEMPLOYEES = #{manageemployees,jdbcType=VARCHAR},
+      DEVELOPEMPLOYEES = #{developemployees,jdbcType=VARCHAR},
+      QUALITYEMPLOYEES = #{qualityemployees,jdbcType=VARCHAR},
+      AGENCY = #{agency,jdbcType=VARCHAR},
+      NORMALDELIVERYDAY = #{normaldeliveryday,jdbcType=VARCHAR},
+      BULKSHIPMENTSDAY = #{bulkshipmentsday,jdbcType=VARCHAR},
+      ISONINE = #{isonine,jdbcType=VARCHAR},
+      ISONINEID = #{isonineid,jdbcType=VARCHAR},
+      ISOFOUR = #{isofour,jdbcType=VARCHAR},
+      ISOFOURID = #{isofourid,jdbcType=VARCHAR},
+      QSNINE = #{qsnine,jdbcType=VARCHAR},
+      QSNINEID = #{qsnineid,jdbcType=VARCHAR},
+      CERTIFICATION = #{certification,jdbcType=VARCHAR},
+      CERTIFICATIONID = #{certificationid,jdbcType=VARCHAR},
+      DOMESTICNAME = #{domesticname,jdbcType=VARCHAR},
+      DOMESTICBRAND = #{domesticbrand,jdbcType=VARCHAR},
+      ENTERPORTNAME = #{enterportname,jdbcType=VARCHAR},
+      ENTERPORTBRAND = #{enterportbrand,jdbcType=VARCHAR},
+      AGENCYEMPLOYEESTOTAL = #{agencyemployeestotal,jdbcType=VARCHAR},
+      AGENCYEMPLOYEESSALES = #{agencyemployeessales,jdbcType=VARCHAR},
+      ONLYAGENCY = #{onlyagency,jdbcType=VARCHAR},
+      TERRITORY = #{territory,jdbcType=VARCHAR},
+      WAREHOUSE = #{warehouse,jdbcType=VARCHAR},
+      INVENTORY = #{inventory,jdbcType=VARCHAR},
+      DELIVERYMODE = #{deliverymode,jdbcType=VARCHAR},
+      DISTRIBUTIONRANGE = #{distributionrange,jdbcType=VARCHAR},
+      ENTERPRISEQUALIFICATION = #{enterprisequalification,jdbcType=VARCHAR},
+      REPAIREMPLOYEESTOTAL = #{repairemployeestotal,jdbcType=VARCHAR},
+      TECHNICIANSEMPLOYEES = #{techniciansemployees,jdbcType=VARCHAR},
+      WORKINGNUM = #{workingnum,jdbcType=VARCHAR},
+      MAJORMODELS = #{majormodels,jdbcType=VARCHAR},
+      YEARREPAIR = #{yearrepair,jdbcType=VARCHAR},
+      DIRECTCOMPENSATION = #{directcompensation,jdbcType=VARCHAR},
+      COOPERATORSINSURANCE = #{cooperatorsinsurance,jdbcType=VARCHAR},
+      SPECIALMAINTENANCE = #{specialmaintenance,jdbcType=VARCHAR},
+      SPECIALBRAND = #{specialbrand,jdbcType=VARCHAR},
+      ISFIRSTIMPORTAGENT = #{isfirstimportagent,jdbcType=VARCHAR},
+      ALLIANCE = #{alliance,jdbcType=VARCHAR},
+      ALLIANCEID = #{allianceid,jdbcType=VARCHAR},
+      COMPANYPHOTO = #{companyphoto,jdbcType=VARCHAR},
+      QQ = #{qq,jdbcType=VARCHAR},
+      WECHAT = #{wechat,jdbcType=VARCHAR},
+      FAX = #{fax,jdbcType=VARCHAR},
+      ACCESSORIES = #{accessories,jdbcType=VARCHAR},
+      ATTESTATIONPICTURE = #{attestationpicture,jdbcType=VARCHAR},
+      MAINBRAND = #{mainbrand,jdbcType=VARCHAR},
+      ISQUICKLYCENTER = #{isquicklycenter,jdbcType=VARCHAR},
+      DELIVERREGION = #{deliverregion,jdbcType=VARCHAR},
+      ISCOLLECTMONEY = #{iscollectmoney,jdbcType=VARCHAR},
+      CANPICKUP = #{canpickup,jdbcType=VARCHAR},
+      PRICESTANDARDS = #{pricestandards,jdbcType=VARCHAR},
+      CJBJ = #{cjbj,jdbcType=VARCHAR},
+      MICRO_SIGNAL = #{microSignal,jdbcType=VARCHAR},
+      SUPER_SELLER = #{superSeller,jdbcType=VARCHAR},
+      IS_QD = #{isQd,jdbcType=VARCHAR},
+      COMPANY_ID = #{companyId,jdbcType=VARCHAR},
+      QD_TIME = #{qdTime,jdbcType=TIMESTAMP},
+      VALIDATE_CODE = #{validateCode,jdbcType=VARCHAR},
+      COMPANYPHOTOA = #{companyphotoa,jdbcType=VARCHAR},
+      COMPANYPHOTOB = #{companyphotob,jdbcType=VARCHAR},
+      COMPANYPHOTOC = #{companyphotoc,jdbcType=VARCHAR},
+      CREDIT_LEVEL = #{creditLevel,jdbcType=INTEGER},
+      INTEGRAL_LEVEL = #{integralLevel,jdbcType=INTEGER},
+      PID = #{pid,jdbcType=VARCHAR},
+      ISMNG = #{ismng,jdbcType=VARCHAR},
+      IS_HZ_KZ_STATUS = #{isHzKzStatus,jdbcType=VARCHAR},
+      IS_HZ_KZ_SF_TYPE = #{isHzKzSfType,jdbcType=VARCHAR},
+      PARTS_VALIDATE_REMARK = #{partsValidateRemark,jdbcType=VARCHAR},
+      SOURCE_FLAG = #{sourceFlag,jdbcType=VARCHAR},
+      RETURN_CODE = #{returnCode,jdbcType=VARCHAR},
+      MERCHANT_CODE = #{merchantCode,jdbcType=VARCHAR},
+      BANK_TYPE = #{bankType,jdbcType=VARCHAR},
+      CREDIT_NO = #{creditNo,jdbcType=VARCHAR},
+      IS_ACCESS_FLAG = #{isAccessFlag,jdbcType=VARCHAR},
+      AUTO_SELECT_PJS_FLAG = #{autoSelectPjsFlag,jdbcType=VARCHAR},
+      THREAD_NUM = #{threadNum,jdbcType=INTEGER},
+      message_code = #{messageCode,jdbcType=VARCHAR},
+      EXPIRED_TIME = #{expiredTime,jdbcType=TIMESTAMP},
+      IS_COOPERATE_FLAG = #{isCooperateFlag,jdbcType=VARCHAR},
+      XJ_TX_FLAG = #{xjTxFlag,jdbcType=VARCHAR},
+      XD_TX_FLAG = #{xdTxFlag,jdbcType=VARCHAR},
+      ZF_TX_FLAG = #{zfTxFlag,jdbcType=VARCHAR},
+      SH_TX_FLAG = #{shTxFlag,jdbcType=VARCHAR},
+      INITIAL_TELEPHONE = #{initialTelephone,jdbcType=VARCHAR},
+      FP_COMPANY_NAME = #{fpCompanyName,jdbcType=VARCHAR},
+      FP_ID_CODE = #{fpIdCode,jdbcType=VARCHAR},
+      FP_ADDRESS = #{fpAddress,jdbcType=VARCHAR},
+      FP_PHONE = #{fpPhone,jdbcType=VARCHAR},
+      FP_BANK_TYPE = #{fpBankType,jdbcType=VARCHAR},
+      FP_BANK_CODE = #{fpBankCode,jdbcType=VARCHAR},
+      AQ_FP_TYPE = #{aqFpType,jdbcType=VARCHAR},
+      FP_COMMON_COMPANY_NAME = #{fpCommonCompanyName,jdbcType=VARCHAR},
+      ZY_BANK_TYPE = #{zyBankType,jdbcType=VARCHAR},
+      ZY_CREDIT_NO = #{zyCreditNo,jdbcType=VARCHAR},
+      ZY_MERCHANT_CODE = #{zyMerchantCode,jdbcType=VARCHAR},
+      AREA_QUOTE_MANAGER = #{areaQuoteManager,jdbcType=VARCHAR},
+      HJ_AUTO_SELECT_PJS_FLAG = #{hjAutoSelectPjsFlag,jdbcType=VARCHAR},
+      PJS_SELECT_RANGE = #{pjsSelectRange,jdbcType=VARCHAR},
+      info_public_flag = #{infoPublicFlag,jdbcType=VARCHAR},
+      shop_name = #{shopName,jdbcType=VARCHAR},
+      DO_COOPERATE_FLAG = #{doCooperateFlag,jdbcType=VARCHAR},
+      IS_MALLUSER = #{isMalluser,jdbcType=VARCHAR},
+      lEGALPERSON_NAME = #{legalpersonName,jdbcType=VARCHAR},
+      lEGALPERSON_PICTRRE = #{legalpersonPictrre,jdbcType=VARCHAR},
+      lEGALPERSON_CARDED = #{legalpersonCarded,jdbcType=VARCHAR},
+      lEGALPERSON_PHONE = #{legalpersonPhone,jdbcType=VARCHAR},
+      YH_ORIGIN = #{yhOrigin,jdbcType=VARCHAR}
+    where ID = #{id,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByQuery" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from aq_yhxxb_detail
+    <if test="userId != null">
+	    where ID = #{userId,jdbcType=INTEGER}
+    </if>
+  </select>
+</mapper>
