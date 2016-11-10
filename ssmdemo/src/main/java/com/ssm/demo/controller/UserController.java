@@ -23,6 +23,11 @@ public class UserController extends BaseController {
 	@Autowired
 	private UserService userService;
 
+	@RequestMapping(value = { "/userLogin" })
+	public void login(ModelMap model, HttpServletRequest request) {
+		System.out.println("1123");
+	}
+	
 	@RequestMapping(value = { "/index" })
 	public void index(ModelMap model, HttpServletRequest request) {
 		System.out.println();
