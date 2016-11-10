@@ -18,6 +18,9 @@
 		<jackson-dataformat-xml.version>2.4.4</jackson-dataformat-xml.version>
 		<mybatis-generator-core.version>1.3.2</mybatis-generator-core.version>
 		<mysql-connector-java.version>5.1.28</mysql-connector-java.version>
+		<log4j.root>D:/jmLogFile</log4j.root>
+		<log4j.leve>trace,stdout</log4j.leve>
+		<log4j.ale>trace,stdout</log4j.ale>
 	</properties>
 
 	<dependencyManagement>
