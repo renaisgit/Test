@@ -25,7 +25,6 @@ public class UserController extends BaseController {
 
 	@RequestMapping(value = { "/userLogin" })
 	public void login(ModelMap model, HttpServletRequest request) {
-		System.out.println("1123");
 	}
 	
 	@RequestMapping(value = { "/index" })
