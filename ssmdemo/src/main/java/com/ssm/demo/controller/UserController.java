@@ -11,7 +11,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.github.miemiedev.mybatis.paginator.domain.Order;
 import com.github.miemiedev.mybatis.paginator.domain.PageBounds;
-import com.ssm.demo.common.Page;
 import com.ssm.demo.common.service.BaseQuery;
 import com.ssm.demo.service.UserService;
 import com.ssm.demo.service.query.UserQuery;
