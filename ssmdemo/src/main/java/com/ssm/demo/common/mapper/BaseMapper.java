@@ -5,6 +5,13 @@ import java.util.List;
 
 import com.ssm.demo.common.service.BaseQuery;
 
+/**
+ * 实体基本操作方法
+ * @author CHEN SHUAI
+ *
+ * @param <T>
+ * @param <PK>
+ */
 public interface BaseMapper<T extends Serializable, PK> {
 	int deleteByPrimaryKey(PK id);
 

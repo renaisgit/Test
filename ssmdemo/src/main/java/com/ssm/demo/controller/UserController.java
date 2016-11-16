@@ -18,7 +18,7 @@ import com.ssm.demo.service.query.UserQuery;
 /**
  * UserController
  * 
- * @author Administrator
+ * @author CHEN SHUAI
  * 
  */
 @Controller

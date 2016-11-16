@@ -3,6 +3,11 @@ package com.ssm.demo.models;
 import java.io.Serializable;
 import java.util.Date;
 
+/**
+ * 用户
+ * @author Administrator
+ *
+ */
 public class SysUser implements Serializable {
     private String id;
 
