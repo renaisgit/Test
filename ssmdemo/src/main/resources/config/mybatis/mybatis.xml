@@ -3,7 +3,7 @@
 	PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 	"http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-  
+  	<properties resource="config/connection.properties" />
 	<settings>
 		<!-- 这个配置使全局的映射器启用或禁用 缓存 -->
 		<setting name="cacheEnabled" value="true" />
@@ -34,9 +34,9 @@
 		<typeAlias alias="List" type="java.util.List" />
 		<package name="com.ssm.demo.models"/>		
 	</typeAliases>
-	    <plugins>
+	<plugins>
         <plugin interceptor="com.github.miemiedev.mybatis.paginator.OffsetLimitInterceptor">
-            <property name="dialectClass" value="com.github.miemiedev.mybatis.paginator.dialect.MySQLDialect"/>
+            <property name="dialectClass" value="${dialectClass}"/>
         </plugin>
     </plugins>
     <!-- 

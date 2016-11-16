@@ -3,7 +3,7 @@ package com.ssm.demo.common.mapper;
 import java.io.Serializable;
 import java.util.List;
 
-import com.ssm.demo.common.service.query.BaseQuery;
+import com.ssm.demo.common.service.BaseQuery;
 
 public interface BaseMapper<T extends Serializable, PK> {
 	int deleteByPrimaryKey(PK id);

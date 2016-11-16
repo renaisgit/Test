@@ -73,5 +73,12 @@
         <property name="basePackage" value="com.ssm.demo.mapper" />  
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>  
     </bean>  
+    
+    <mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/**" />
+			<bean class="com.github.miemiedev.mybatis.paginator.springmvc.PageListAttrHandlerInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
   
 </beans>

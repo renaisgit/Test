@@ -1,6 +1,7 @@
 package com.ssm.demo.service.query;
 
-import com.ssm.demo.common.service.query.BaseQuery;
+
+import com.ssm.demo.common.service.BaseQuery;
 
 import lombok.Data;
 
