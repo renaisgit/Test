@@ -13,9 +13,6 @@
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<log4j.root>D:/jmLogFile</log4j.root>
-		<log4j.leve>trace,stdout</log4j.leve>
-		<log4j.ale>trace,stdout</log4j.ale>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -105,7 +102,7 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-oxm</artifactId>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-tx</artifactId>
@@ -172,12 +169,12 @@
 			<artifactId>mybatis</artifactId>
 			<optional>true</optional>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis-spring</artifactId>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
@@ -197,7 +194,7 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>cglib</groupId>
 			<artifactId>cglib-nodep</artifactId>
@@ -223,8 +220,8 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>druid</artifactId>
+			<groupId>org.jsoup</groupId>
+			<artifactId>jsoup</artifactId>
 		</dependency>
 	</dependencies>
 	<build>
