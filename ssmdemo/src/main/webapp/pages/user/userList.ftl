@@ -13,6 +13,9 @@
 			<td>
 				${user.id}
 			</td>
+			<td>
+				${user.createDate?string("yyyy-MM-dd HH:mm:ss")}
+			</td>
 		</tr>
 		</#list>
 	</table>
