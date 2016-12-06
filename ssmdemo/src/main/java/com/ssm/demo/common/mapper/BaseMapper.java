@@ -3,6 +3,7 @@ package com.ssm.demo.common.mapper;
 import java.io.Serializable;
 import java.util.List;
 
+import com.ssm.demo.common.page.PageBean;
 import com.ssm.demo.common.service.BaseQuery;
 
 /**
@@ -26,4 +27,5 @@ public interface BaseMapper<T extends Serializable, PK> {
 	int updateByPrimaryKey(T record);
 
 	List<T> selectByQuery(BaseQuery query);
+	
 }

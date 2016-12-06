@@ -50,12 +50,8 @@ public class UserController extends BaseController {
 	}
 
 	@RequestMapping(value = { "/userPage" })
-	public ModelAndView userPage(ModelMap model, HttpServletRequest request,
-			@RequestParam(required = false, defaultValue = "1") int page, //页码 默认1
-			@RequestParam(required = false, defaultValue = "30") int limit,//每页显示条数 
-			@RequestParam(required = false, defaultValue = "CREATE_DATE") String sort, 
-			@RequestParam(required = false, defaultValue = "desc") String dir) {
-		createResult(model, userService.findPageByQuery(new UserQuery(), new PageBounds(page, limit, Order.create(sort, dir))));
+	public ModelAndView userPage(ModelMap model, HttpServletRequest request) {
+		createResult(model, userService.findPageByQuery(new UserQuery()));
 		return new ModelAndView("user/userList");
 	}
 

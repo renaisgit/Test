@@ -35,8 +35,13 @@
 		<package name="com.ssm.demo.models"/>		
 	</typeAliases>
 	<plugins>
-        <plugin interceptor="com.github.miemiedev.mybatis.paginator.OffsetLimitInterceptor">
+        <!-- <plugin interceptor="com.ssm.demo.common.mybatis.interceptor.ExecutorInterceptor">
             <property name="dialectClass" value="${dialectClass}"/>
+            <property name="pageFlag" value="${pageFlag}"/>
+        </plugin> -->
+        <plugin interceptor="com.ssm.demo.common.mybatis.interceptor.PageInterceptor">
+            <property name="dialectClass" value="${dialectClass}" />
+            <property name="pageFlag" value="${pageFlag}" />
         </plugin>
     </plugins>
     <!-- 

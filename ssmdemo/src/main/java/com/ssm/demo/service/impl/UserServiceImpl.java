@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.github.miemiedev.mybatis.paginator.domain.PageBounds;
+import com.ssm.demo.common.page.PageBean;
 import com.ssm.demo.common.service.BaseQuery;
 import com.ssm.demo.mapper.SysUserMapper;
 import com.ssm.demo.models.SysUser;
@@ -29,9 +30,10 @@ public class UserServiceImpl extends BaseServiceImpl<SysUser, String> implements
 	}
 
 	@Override
-	public List findPageByQuery(BaseQuery query, PageBounds pageBounds) {
+	public PageBean findPageByQuery(BaseQuery query) {
 		// TODO Auto-generated method stub
-		return sysUserMapper.selectPageByQuery(query, pageBounds);
+		 query.setRecordList(sysUserMapper.getSysUserListPage(query));
+		 return query;
 	}
 
 }

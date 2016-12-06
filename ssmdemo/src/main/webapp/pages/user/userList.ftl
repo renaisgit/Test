@@ -8,7 +8,7 @@
 <a href="${webRoot}/user/userList.html">打开</a>
 <a href="${jsRoot}/user/userList.html">打开</a>
 	<table>
-		<#list result as user>
+		<#list result.recordList as user>
 		<tr>
 			<td>
 				${user.id}
